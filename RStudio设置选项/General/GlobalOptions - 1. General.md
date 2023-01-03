@@ -45,7 +45,7 @@
   > 打开RStudio时，会自动重新打开以前为当前项目打开的源文件。
   > 同时上次退出时的变量查看窗口也会保留，无论退出前是否保存了变量.RData。
 
-  ![恢复打开的源文档](/RStudio设置选项\General\image\恢复源文件和变量查看.png)
+  ![恢复打开的源文档](/RStudio设置选项/General/image/恢复源文件和变量查看.png)
 
 ### 1.1.2 Workspace
 
@@ -61,7 +61,7 @@
   > **Ask**: 在退出时**询问**是否保存工作区
   > _请注意，如果在会话结束时工作区未进行任何更改，则即使指定了Ask，也不会出现保存提示。意外退出时，即使指定了Always也不能保存工作区变量。_
 
-  ![保存工作空间](/RStudio设置选项\General\image\保存工作空间.png)
+  ![保存工作空间](/RStudio设置选项/General/image/保存工作空间.png)
 
 ### 1.1.3 History
 
@@ -70,13 +70,13 @@
   > 确保.Rhistory文件始终与会话中的命令一起保存，即使退出时选择不保存.RData文件。
   > 意外退出时，即使勾选也不能保存最新的历史命令。
 
-  ![历史记录窗口](/RStudio设置选项\General\image\历史窗口.png)
+  ![历史记录窗口](/RStudio设置选项/General/image/历史窗口.png)
 
 - [x] **Remove duplicate entries in history**
 删除历史记录中的重复条目
   > 如果命令与**最近**添加的命令完全相同，则取消将其添加到历史记录中。
 
-  ![不记录重复命令](/RStudio设置选项\General\image\不记录重复命令.png)
+  ![不记录重复命令](/RStudio设置选项/General/image/不记录重复命令.png)
 
 ### 1.1.4 Other
 
@@ -84,13 +84,13 @@
 在选项卡切换时循环到首个选项卡
   > ctrl+Tab快捷键可以在source的选项卡中切换窗口，启动此选项将允许从最后一个选项卡切换到第一个选项卡。
 
-  ![标签循环](/RStudio设置选项\General\image\标签循环.png)
+  ![标签循环](/RStudio设置选项/General/image/标签循环.png)
 
 - [x] **Automatically notify me of updates to RStudio**
 当RStudio版本更新时自动提醒我
   > 当检测到RStudio存在新版本时，将在用户打开RStudio新窗口时弹窗**提示**用户更新。
 
-  ![更新提示](/RStudio设置选项\General\image\更新提示.png)
+  ![更新提示](/RStudio设置选项/General/image/更新提示.png)
 
 - [x] **Send automated crash reports to RStudio**
 向RStudio发送软件崩溃报告
@@ -107,7 +107,7 @@
   > **Cairo PNG**: Cairo PNG
   > **AGG**: Anti-Grain Geometry（AGG）是一个高质量、高性能的二维图形库。"ragg"包提供了一组基于AGG的图形设备，作为通过“grDevices”包提供的光栅设备的替代品
 
-  ![图片后端](/RStudio设置选项\General\image\图片后端.png)
+  ![图片后端](/RStudio设置选项/General/image/图片后端.png)
 
 - **Antialiasing:** `(Default)`
 抗锯齿
@@ -117,7 +117,7 @@
   > **subpixel**: 次像素平滑
   > _注意：该选项仅在backend选项为Cairo时有效，backend为AGG时自动开启抗锯齿。_
 
-  ![抗锯齿](/RStudio设置选项\General\image\抗锯齿.png)
+  ![抗锯齿](/RStudio设置选项/General/image/抗锯齿.png)
 
 ## 1.3 Advanced
 
@@ -147,13 +147,13 @@
   > 若打开一个项目文件夹，勾选此选项将在RStudio窗口顶部标题中显示项目的完整路径，取消勾选则只显示项目文件夹的名称。
   > 不在某个项目中时，此选项无效，RStudio窗口标题为**RStudio**。
 
-  ![项目路径](/RStudio设置选项\General\image\显示R项目路径.png)
+  ![项目路径](/RStudio设置选项/General/image/显示R项目路径.png)
 
 - [x] **Use native file and message dialog boxes**
 RStudio Desktop是否将使用操作系统的文件打开窗口和消息对话框
   > 勾选此选项后，RStudio将使用操作系统的文件打开窗口和消息对话框，取消勾选则使用RStudio自带的文件打开窗口和消息对话框。
 
-  ![文件窗口](/RStudio设置选项\General\image\文件打开窗口.png)
+  ![文件窗口](/RStudio设置选项/General/image/文件打开窗口.png)
 
 - [ ] **Disable Electron accessibility support**
 禁用Electron辅助功能支持
@@ -169,7 +169,7 @@ RStudio Desktop是否将使用操作系统的文件打开窗口和消息对话�
 在环境变量中显示.Last.value
   > 在环境变量面板中显示用户执行的最后一个R表达式的返回值，该返回值存储在变量名为.Last.value的变量中。
 
-  ![LastValue](/RStudio设置选项\General\image\最后表达式值.png)
+  ![LastValue](/RStudio设置选项/General/image/最后表达式值.png)
 
 - **Help panel font size:**`12`
 帮助面板字体大小
