@@ -31,13 +31,15 @@
   > 选择一个电脑上已安装的R语言版本。  
   > 用户可以安装多个不同版本的R语言，RStudio默认选择最新的版本。  
   > 选择R语言版本的同时，安装的第三方**包**也会根据版本变化。  
+  > 按住**ctrl**键然后鼠标左键**双击**RStudio快捷方式可在RStudio启动前选择R语言版本。 
 
   ![R version](/RStudio设置选项/General/image/R语言版本选择.png)
 
 - **Default working directory (when not in a project):**  
 默认工作目录:  
-  > RStudio的启动目录（不在项目中时），将从此目录中读取初始.RData和.Rhistory文件（如果存在）。
+  > RStudio的启动目录（不在项目中时），将从此目录中读取初始.RData和.Rhistory文件（如果存在）。  
   > 当前工作目录和**Files**窗格也将设置为此目录。当指定目录不存在时，将设为“文档”所在位置，如"E:/OneDrive/文档"。  
+  >   
   > _请注意，当使用文件关联（双击打开.R脚本）或带有指示初始工作目录的命令行参数的终端启动RStudio时，可以覆盖此设置。_
 
 - [x] **Restore most recently opened project at startup**  
@@ -46,7 +48,7 @@
 
 - [x] **Restore previously open source documents at startup**  
 在启动时恢复以前打开的源文档  
-  > 打开RStudio时，会自动重新打开以前为当前项目打开的源文件。  
+  > 打开RStudio时，会自动重新打开以前为当前项目打开的源文件。    
   > 同时上次退出时的变量查看窗口也会保留，无论退出前是否保存了变量.RData。  
 
   ![恢复打开的源文档](/RStudio设置选项/General/image/恢复源文件和变量查看.png)
@@ -63,6 +65,7 @@
   > **Always**: 在退出时**始终**将工作区保存于.RData文件中  
   > **Never**: 在退出时**从不**保存工作区  
   > **Ask**: 在退出时**询问**是否保存工作区  
+  > 
   > _请注意，如果在会话结束时工作区未进行任何更改，则即使指定了Ask，也不会出现保存提示。意外退出时，即使指定了Always也不能保存工作区变量。_
 
   ![保存工作空间](/RStudio设置选项/General/image/保存工作空间.png)
@@ -119,7 +122,8 @@
   > **None**: 无  
   > **Gray**: 灰度平滑  
   > **subpixel**: 次像素平滑  
-  > _注意：该选项仅在backend选项为Cairo时有效，backend为AGG时自动开启抗锯齿。_
+  > 
+  > _请注意：该选项仅在backend选项为Cairo时有效，backend为AGG时自动开启抗锯齿。_
 
   ![抗锯齿](/RStudio设置选项/General/image/抗锯齿.png)
 
