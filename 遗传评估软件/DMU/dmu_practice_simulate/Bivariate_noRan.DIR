@@ -1,0 +1,36 @@
+$COMMENT          
+          
+$ANALYSE 1 1 0 0           
+          
+$DATA  ASCII (3,4,-99) phenotypes.txt          
+          
+$VARIABLE          
+#I1 I2   I3
+ID  mean herd        
+#R1  R2   R3  R4
+y    AGE  BF  TNB   
+
+$VAR_STR 1 PED 2 ASCII pedigree.txt
+    
+$MODEL          
+2   
+0          
+0          
+1 0 2 3 1      
+2 0 2 3 1        
+1 1         
+1 1       
+0
+0
+0    
+          
+$RESIDUALS ASCII          
+$SOLUTION          
+          
+          
+$DMUAI          
+10          
+1e-07          
+1.0d-6          
+1          
+0          
