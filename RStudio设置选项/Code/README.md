@@ -541,11 +541,12 @@ Ctrl+Enter执行
 键盘空闲时间(ms): `1000`  
   > 判断键盘空闲的时间，单位为毫秒  
 
-<br>
+<br>  
+文章配套教程视频及其他平台文章链接：
 
-[RStudio设置选项（全）——1.General - bilibili](https://www.bilibili.com/video/BV1VM411a7S1/?spm_id_from=333.999.0.0)
+[RStudio设置选项（全）——1.General - bilibili](https://www.bilibili.com/video/BV1NA411o7jw/)
 
-[RStudio设置选项（全）——1.General - 知乎](https://www.bilibili.com/video/BV1VM411a7S1/?spm_id_from=333.999.0.0)
+[RStudio设置选项（全）——1.General - 知乎](https://zhuanlan.zhihu.com/p/597776008)
 
 <br>
 
