@@ -11,26 +11,26 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 
 :warning: RStudio版本: **RStudio 2022.12.0 Build 353**    
     
-- [2. Code](#2-code)  
-  - [2.1 Editing](#21-editing)  
-    - [2.1.1 General](#211-general)  
-    - [2.1.2 Execution](#212-execution)  
-    - [2.1.3 Snippets](#213-snippets)  
-  - [2.2 Display](#22-display)  
-    - [2.2.1 General](#221-general)  
-    - [2.2.2 Syntax](#222-syntax)  
-  - [2.3 Saving](#23-saving)  
-    - [2.3.1 General](#231-general)  
-    - [2.3.2 Serialization](#232-serialization)  
-    - [2.3.3 Auto-save](#233-auto-save)  
-  - [2.4 Completion](#24-completion)  
-    - [2.4.1 R and C/C++](#241-r-and-cc)  
-    - [2.4.2 Other Languages](#242-other-languages)  
-    - [2.4.3 Completion Delay](#243-completion-delay)  
-  - [2.5 Diagnostics](#25-diagnostics)  
-    - [2.5.1 R Diagnostics](#251-r-diagnostics)  
-    - [2.5.2 Other Languages](#252-other-languages)  
-    - [2.5.3 Show Diagnostics](#253-show-diagnostics)  
+- [2. Code](#2-code)
+  - [2.1 Editing](#21-editing)
+    - [2.1.1 General](#211-general)
+    - [2.1.2 Execution](#212-execution)
+    - [2.1.3 Snippets](#213-snippets)
+  - [2.2 Display](#22-display)
+    - [2.2.1 General](#221-general)
+    - [2.2.2 Syntax](#222-syntax)
+  - [2.3 Saving](#23-saving)
+    - [2.3.1 General](#231-general)
+    - [2.3.2 Serialization](#232-serialization)
+    - [2.3.3 Auto-save](#233-auto-save)
+  - [2.4 Completion](#24-completion)
+    - [2.4.1 R and C/C++](#241-r-and-cc)
+    - [2.4.2 Other Languages](#242-other-languages)
+    - [2.4.3 Completion Delay](#243-completion-delay)
+  - [2.5 Diagnostics](#25-diagnostics)
+    - [2.5.1 R Diagnostics](#251-r-diagnostics)
+    - [2.5.2 Other Languages](#252-other-languages)
+    - [2.5.3 Show Diagnostics](#253-show-diagnostics)
     
 #  2. Code  
     
@@ -84,6 +84,8 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   > 对粘贴到**编辑器**或**控制台**中的**多行**R代码块自动执行缩进  
   > 缩进量为2字符或自动检测的缩进量  
     
+  ![粘贴缩进](/RStudio设置选项/Code/image/粘贴缩进.gif)  
+
 - [x] **Vertically align arguments in auto-indent**  
 垂直对齐自动缩进中的参数  
   > 函数参数位于不同的行时，根据嵌套关系垂直对齐各级参数  
@@ -96,17 +98,19 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   >  
   >_<u>请注意，这不会在换行点插入换行符，只是在编辑器中的多行上显示代码</u>_  
     
+  ![软换行](/RStudio设置选项/Code/image/软换行.gif)  
+
 - [ ] **Continue comment when inserting new line**  
 插入新行时继续注释  
   > 若光标所在行为注释行，则插入新行时将同步上一行的注释格式  
   > 即新注释行前的`#`符号个数和缩进将与上一行保持一致  
     
+  ![连续注释](/RStudio设置选项/Code/image/连续注释.gif)  
+
 - [x] **Enable hyperlink highlighting in editor**  
 在编辑器中启用超链接突出显示    
   > 突出显示活动文件代码或注释中的网页链接（下划线）  
   > 按住`Ctrl`键（非`Shift`键）并单击链接，可在默认浏览器中打开链接  
-  >  
-  >_<u>请注意，活动文件处于打开R项目的RStudio窗口时，即使勾选此选项脚本中的链接也不会突出显示</u>_  
   
   ![超链接突出显示](/RStudio设置选项/Code/image/超链接突出显示.png)  
     
@@ -117,13 +121,18 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 - **Surround selection on text insertion:** `Quotes & Brackets`  
 将指定符号插入选中文本两侧  
   >在选中文本时键入引号或括号，将自动在选中文本两侧同时插入一对匹配符号  
-    
+  >**Never**: 不启用  
+  >**Quotes**: 键入引号自动插入  
+  >**Quotes & Brackets**: 键入引号或括号均自动插入
+
+  ![选中文本插入配对符号](/RStudio设置选项/Code/image/选中文本插入配对符号.gif)  
+
 - **Keybindings:** `Default`  
 组合键（风格）  
   >选择快捷键的风格和自定义部分快捷键，同时光标也会有相应变化  
   >**Default**: 默认风格  
-  >**Emacs**: 如`Ctrl+X`然后单独按下`B`，可在source窗口的标签页之间切换  
   >**Vim**: 如在非插入模式时，按`0`跳转到光标所在行的最前面字符处（包括空白符）  
+  >**Emacs**: 如`Ctrl+X`然后单独按下`B`，可在source窗口的标签页之间切换  
   >**Sublime Text**: 如`Ctrl+P`可以搜索跳转到指定活动文件或活动文件中的函数  
     
 - `Modify Keyboard Shortcuts...`  
@@ -144,7 +153,9 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   >在活动文件脚本中通过run、source或`Ctrl+Enter`执行代码后，光标自动移动到控制台Console中  
   >  
   >_<u>请注意，光标移动到控制台后可在控制台编辑命令运行，但此时按下Ctrl+Enter键仍能继续执行脚本文件中的命令</u>_  
-    
+  
+  ![光标自动移到控制台](/RStudio设置选项/Code/image/光标自动移到控制台.gif)  
+
 - **Ctrl+Enter executes:** `Multi-line R statement`  
 Ctrl+Enter执行  
   >在活动脚本文件中按下`Ctrl+Enter`组合键时，代码的执行内容  
@@ -153,7 +164,9 @@ Ctrl+Enter执行
   >**Multiple consecutive R lines**: 执行从光标所在行到下一个空行的所有代码  
   >  
   >_<u>请注意，无论何种执行方式，执行结束后光标都将移动到离执行代码最近的非空行，即会自动跳过脚本中的空行，但不会越过注释行。</u>_  
-    
+
+  ![ctrl+Enter执行](/RStudio设置选项/Code/image/ctrl+Enter执行.gif)  
+
 ###  2.1.3 Snippets  
     
     
@@ -235,6 +248,8 @@ Ctrl+Enter执行
   >允许将活动文件（控制台）中选中的文本内容进行拖（放）**剪切**到其他位置  
   >也可将选中文本拖放到RStudio外的其他应用程序中，此时为**复制**  
     
+  ![拖动选中文本](/RStudio设置选项/Code/image/拖动选中文本.gif)  
+
 - **Fold Style:** `Start and End`  
  折叠样式  
   >**Start Only**: 只在可折叠代码块的开始处显示折叠标记  
@@ -275,12 +290,16 @@ Ctrl+Enter执行
   >  
   >_<u>请注意，活动文件处于打开R项目的RStudio窗口时，此选项会被Project Options中的相同设置项覆盖</u>_  
     
+  ![以换行符结尾](/RStudio设置选项/Code/image/以换行符结尾.gif)  
+
 - [x] **Strip trailing horizontal whitespace when saving**  
 保存文件时去除行尾处的空白符  
   > 保存文件时删除活动文件中每一行的尾部的空白符（空格符和制表符）  
   >  
   >_<u>请注意，活动文件处于打开R项目的RStudio窗口时，此选项会被Project Options中的相同设置项覆盖</u>_  
     
+  ![删除行尾空白](/RStudio设置选项/Code/image/删除行尾空白.gif)  
+
 - [x] **Restore last cursor position when opening file**  
 打开文件时恢复上次光标位置  
   > 关闭RStudio并重新打开时，恢复上次关闭时各个打开文件中的光标位置（行和列）  
@@ -298,15 +317,17 @@ Ctrl+Enter执行
   >**Posix**: 使用**LF**作为换行符，即\n  
   >**Windows**: 使用**CRLF**作为换行符，即\r\n  
     
+  ![换行符转换](/RStudio设置选项/Code/image/换行符转换.gif)  
+
 - **Default text encoding:**   
-  `CP936`  `Change...`  
+  `UTF-8`  `Change...`  
 默认文本编码  
-  > 指定源文件的默认文本编码（新建/解码），当脚本文件的执行代码（非注释行）中存在中文字符时需要特别关注此选项，若文件编码方式与系统不匹配，此时不止会影响代码阅读，还将影响代码运行。脚本最终运行系统为Windows时建议选择**CP936**/**GB2312**，为Linux时建议选择**UTF-8**，需要同时在两个系统中运行时建议代码中不要出现中文字符  
+  > 指定源文件的默认文本编码（新建/解码），当脚本文件的执行代码（非注释行）中存在中文字符时需要特别关注此选项，若文件编码方式与RStudio默认编码不匹配，此时不止会影响代码阅读，还将影响代码运行。脚本运行系统为Linux时建议选择**UTF-8**，在Windows中运行时建议执行代码（非注释行）中不要出现中文字符  
   >  
   >_<u>请注意，与默认编码不匹配的源文件仍然可以使用“**File->Reopen with Encoding**”菜单命令正确打开。该操作只是更换解读文件的方式，不会实际改变文件的编码方式</u>_  
-    
-  ![文件编码方式](/RStudio设置选项/Code/image/文件编码方式.png)  
-    
+  
+  ![默认文件编码](/RStudio设置选项/Code/image/默认文件编码.gif)  
+  
 ###  2.3.3 Auto-save  
     
     
@@ -318,6 +339,8 @@ Ctrl+Enter执行
 编辑器失去焦点时自动保存  
   > 当编辑活动文件后，若鼠标点击除活动文件的其他位置时，则自动保存当前活动文件  
     
+  ![失去焦点自动保存](/RStudio设置选项/Code/image/失去焦点自动保存.gif)  
+
 - **When editor is idle:** `Backup unsaved changes`  
 当文本编辑器空闲时  
   >**Saved and write changes**: 自动**保存**当前活动文件  
@@ -340,16 +363,22 @@ Ctrl+Enter执行
 **Never**: 从不显示  
 **When triggered( $,:: )**: 当触发时显示  
 **Manually(tab)**: 按下`Tab`键时显示  
+  >  
+  >_<u>请注意，**When triggered**选项未测试成功。若取消勾选**Use tab for autocompletions**，即使选择**Manually**也不能通过Tab键显示补全选项_</u>  
     
 - [x] **Allow automatic completions in console**  
 允许在控制台中自动显示补全  
   >  
-  >_<u>请注意，若勾选了Use tab for autocompletions，即使不勾选此选项在控制台也能通过Tab键完成代码补全_</u>  
+  >_<u>请注意，若勾选了**Use tab for autocompletions**，即使不勾选此选项在控制台也能通过Tab键完成代码补全_</u>  
     
+  ![控制台自动补全](/RStudio设置选项/Code/image/控制台自动补全.gif)  
+
 - [x] **Insert parentheses after function completions**  
 函数完成后插入括号  
   >若输入函数名时使用了代码补全，自动在函数名后添加括号，并将光标移动到括号内  
     
+  ![函数补全自动加括号](/RStudio设置选项/Code/image/函数补全自动加括号.gif)  
+
 - [x] **Show help tooltip after function completions**  
 函数完成后显示提示信息  
   >勾选此选项，则在代码完成后在一个小弹出窗口中显示函数帮助页面的摘要  
@@ -360,6 +389,8 @@ Ctrl+Enter执行
 光标空闲时显示提示信息  
   >当光标在函数名上停留一段时间后，显示函数帮助页面的摘要  
     
+  ![函数名停留显示帮助](/RStudio设置选项/Code/image/函数名停留显示帮助.gif)  
+
 - [x] **Insert spaces around equals for argument completions**  
 在参数=号周围插入空格  
   >当使用代码补全时，自动在函数参数赋值的=号前后添加空格  
@@ -372,6 +403,8 @@ Ctrl+Enter执行
   >  
   >_<u>请注意，若勾选此选项，即使**Show code completions**设为**Never**，按下`Tab`键仍可显示可能的补全选项</u>_  
     
+  ![Tab键补全](/RStudio设置选项/Code/image/Tab键补全.gif)  
+
 - [x] **Use tab for multiline autocompletions**  
 使用Tab键进行多行自动补全  
   >当函数参数换行时，勾选此选项可在非函数名所在的行按下`Tab`键也显示自动补全选项，而不是插入制表符  
@@ -403,6 +436,7 @@ Ctrl+Enter执行
     
 - **Show completions after keyboard idle (ms):**`250`  
 键盘空闲后显示补全选项  
+  > 只在**Show code completions:**为**Automatically**时有效  
   > 编辑器在停止键入后应等待多长时间（毫秒）才显示代码补全选项  
     
 ##  2.5 Diagnostics  
@@ -493,23 +527,28 @@ Ctrl+Enter执行
 保存源文件时显示诊断信息  
   > 勾选该选项时，保存文件时会立即刷新诊断信息。取消勾选后虽然不会立即刷新，但若勾选了**Show diagnostics for R**，也会在一定时间后显示诊断信息  
     
+  ![保存立即显示诊断](/RStudio设置选项/Code/image/保存立即显示诊断.gif)  
+
 - [x] **Show diagnostics after keyboard is idle for a period of time**  
 键盘空闲一段时间后显示诊断信息  
-  > 当编辑完一行代码光标移动到别的行时，键盘空闲一段时间后，会显示诊断信息（不是很严格）  
+  > 当编辑完一行代码光标移动到别的行时，键盘空闲指定时间后，会显示诊断信息  
+  >  
+  >_<u>请注意，即使以上来两个选项均不勾选，诊断信息也会在编辑器失去焦点，重新回到文件后刷新诊断信息</u>_ 
     
+  ![间隔一段时间显示诊断](/RStudio设置选项/Code/image/间隔一段时间显示诊断.gif)  
+
 - **Keyboard idle time (ms):** `1000`  
 键盘空闲时间(ms): `1000`  
   > 判断键盘空闲的时间，单位为毫秒  
- 
-<br>
- 
-供稿：李伟宁、薛亚辉  
-编辑：李思雨、孙福腾  
-校对：黄千千、毛瑞涵  
 
 <br>
+
+[RStudio设置选项（全）——1.General - bilibili](https://www.bilibili.com/video/BV1VM411a7S1/?spm_id_from=333.999.0.0)
+
+[RStudio设置选项（全）——1.General - 知乎](https://www.bilibili.com/video/BV1VM411a7S1/?spm_id_from=333.999.0.0)
+
 <br>
-  
+
 后续内容预告：  
   
 3.Console  
@@ -524,3 +563,16 @@ Ctrl+Enter执行
 12.Publishing  
 13.Terminal  
 14.Accessibility  
+
+<br>
+
+供稿：李伟宁、薛亚辉  
+编辑：李思雨、孙福腾  
+校对：黄千千、毛瑞涵  
+
+---
+  
+团队其他公众平台：  
+**微信公众号** | 房子下面一头猪  
+**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260)  
+**知乎** | [房子下面一头猪](https://www.zhihu.com/people/mang-guo-c-60-10)
