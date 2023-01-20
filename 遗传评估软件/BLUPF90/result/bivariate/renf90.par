@@ -1,0 +1,42 @@
+# BLUPF90 parameter file created by RENUMF90
+DATAFILE
+ renf90.dat
+NUMBER_OF_TRAITS
+           2
+NUMBER_OF_EFFECTS
+           3
+OBSERVATION(S)
+    1    2
+WEIGHT(S)
+ 
+EFFECTS: POSITIONS_IN_DATAFILE NUMBER_OF_LEVELS TYPE_OF_EFFECT[EFFECT NESTED]
+ 3 3         2 cross 
+ 4 4       531 cross 
+ 5 5      2272 cross 
+RANDOM_RESIDUAL VALUES
+   1.9043      0.75834E-01
+  0.75834E-01  0.14871    
+ RANDOM_GROUP
+     2
+ RANDOM_TYPE
+ diagonal     
+ FILE
+                                                                                
+(CO)VARIANCES
+   3.2598      0.19932    
+  0.19932      0.50013E-01
+ RANDOM_GROUP
+     3
+ RANDOM_TYPE
+ add_animal   
+ FILE
+renadd03.ped                                                                    
+(CO)VARIANCES
+   1.4323      0.47714E-01
+  0.47714E-01  0.36955E-01
+OPTION SNP_file genotypes.txt
+OPTION verify_parentage 0
+OPTION sol se
+OPTION use_yams
+OPTION missing 0
+OPTION thrStopCorAG -1 # This option should be used as sparingly as possible. It is used here due to the errors of the example data.

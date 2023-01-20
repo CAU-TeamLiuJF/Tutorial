@@ -1,0 +1,431 @@
+AIREMLF90 ver. 1.148
+ In round          3 convergence =  0.170888707100E-12
+ delta convergence =  0.245174576321E-06
+-2logL =        6819.3999     : AIC =        6837.3999    
+Genetic variance(s) for effect  2       
+   3.2598      0.19932    
+  0.19932      0.50013E-01
+  correlations
+   1.0000      0.49364    
+  0.49364       1.0000    
+  eigenvectors
+  0.61741E-01 -0.99809    
+ -0.99809     -0.61741E-01
+  eigenvalues
+  0.37683E-01   3.2721    
+Genetic variance(s) for effect  3       
+   1.4323      0.47714E-01
+  0.47714E-01  0.36955E-01
+  correlations
+   1.0000      0.20739    
+  0.20739       1.0000    
+  eigenvectors
+  0.34136E-01 -0.99942    
+ -0.99942     -0.34136E-01
+  eigenvalues
+  0.35325E-01   1.4339    
+Residual variance(s)
+   1.9043      0.75834E-01
+  0.75834E-01  0.14871    
+  correlations
+   1.0000      0.14250    
+  0.14250       1.0000    
+  eigenvectors
+  0.43076E-01 -0.99907    
+ -0.99907     -0.43076E-01
+  eigenvalues
+  0.14544       1.9075    
+inverse of AI matrix (Sampling Variance)
+  0.73607E-01  0.40710E-02  0.22707E-03 -0.83829E-02 -0.30795E-03 -0.11443E-04 -0.15531E-02 -0.54165E-04 -0.18403E-05
+  0.40710E-02  0.10386E-02  0.10164E-03 -0.43693E-03 -0.12796E-03 -0.80753E-05 -0.32134E-04 -0.65673E-04 -0.46219E-05
+  0.22707E-03  0.10164E-03  0.45840E-04 -0.23847E-04 -0.13998E-04 -0.67303E-05  0.59041E-06 -0.36146E-05 -0.96515E-05
+ -0.83829E-02 -0.43693E-03 -0.23847E-04  0.46864E-01  0.20226E-02  0.92116E-04 -0.86405E-02 -0.43133E-03 -0.22508E-04
+ -0.30795E-03 -0.12796E-03 -0.13998E-04  0.20226E-02  0.91702E-03  0.78565E-04 -0.43014E-03 -0.20667E-03 -0.19945E-04
+ -0.11443E-04 -0.80753E-05 -0.67303E-05  0.92116E-04  0.78565E-04  0.64619E-04 -0.22468E-04 -0.20107E-04 -0.17984E-04
+ -0.15531E-02 -0.32134E-04  0.59041E-06 -0.86405E-02 -0.43014E-03 -0.22468E-04  0.91389E-02  0.39007E-03  0.17211E-04
+ -0.54165E-04 -0.65673E-04 -0.36146E-05 -0.43133E-03 -0.20667E-03 -0.20107E-04  0.39007E-03  0.32880E-03  0.26744E-04
+ -0.18403E-05 -0.46219E-05 -0.96515E-05 -0.22508E-04 -0.19945E-04 -0.17984E-04  0.17211E-04  0.26744E-04  0.44023E-04
+Correlations from inverse of AI matrix
+   1.0000      0.46559      0.12362     -0.14273     -0.37483E-01 -0.52468E-02 -0.59882E-01 -0.11010E-01 -0.10223E-02
+  0.46559       1.0000      0.46580     -0.62626E-01 -0.13111     -0.31171E-01 -0.10430E-01 -0.11238     -0.21615E-01
+  0.12362      0.46580       1.0000     -0.16270E-01 -0.68276E-01 -0.12366      0.91218E-03 -0.29442E-01 -0.21485    
+ -0.14273     -0.62626E-01 -0.16270E-01   1.0000      0.30853      0.52934E-01 -0.41751     -0.10988     -0.15670E-01
+ -0.37483E-01 -0.13111     -0.68276E-01  0.30853       1.0000      0.32274     -0.14858     -0.37637     -0.99266E-01
+ -0.52468E-02 -0.31171E-01 -0.12366      0.52934E-01  0.32274       1.0000     -0.29237E-01 -0.13794     -0.33719    
+ -0.59882E-01 -0.10430E-01  0.91218E-03 -0.41751     -0.14858     -0.29237E-01   1.0000      0.22502      0.27134E-01
+ -0.11010E-01 -0.11238     -0.29442E-01 -0.10988     -0.37637     -0.13794      0.22502       1.0000      0.22229    
+ -0.10223E-02 -0.21615E-01 -0.21485     -0.15670E-01 -0.99266E-01 -0.33719      0.27134E-01  0.22229       1.0000    
+SE for G
+  0.27131      0.32228E-01
+  0.32228E-01  0.67705E-02
+SE for G
+  0.21648      0.30282E-01
+  0.30282E-01  0.80386E-02
+SE for R
+  0.95598E-01  0.18133E-01
+  0.18133E-01  0.66350E-02
+   Column position in file for the first marker: 6
+    Format to read SNP file: (5x,400000i1)                                     
+    Number of SNPs: 10946
+    Format: integer genotypes (0 to 5) to double-precision array
+    Number of Genotyped animals: 1884
+    Reading SNP file elapsed time: .99
+ 
+ Statistics of alleles frequencies in the current population
+    N:          10946
+    Mean:       0.512
+    Min:        0.000
+    Max:        1.000
+    Var:        0.077
+ 
+ Quality Control - SNPs with Call Rate < callrate ( 0.90) will removed: 0
+ 
+ Quality Control - SNPs with MAF < minfreq ( 0.05) will removed: 916
+ 
+ Quality Control - Monomorphic SNPs will be removed: 5
+
+ Quality Control - Removed Animals with Call rate < callrate ( 0.90): 0
+
+ Number of effective SNPs (after QC): 10030
+
+ Number of effective Individuals (after QC): 1884
+ 
+ Statistics of alleles frequencies in the current population after
+ Quality Control (MAF, monomorphic, call rate, HWE, Mendelian conflicts)
+    N:          10030
+    Mean:       0.510
+    Min:        0.050
+    Max:        0.950
+    Var:        0.063
+
+ Genotypes missings (%):  8.368
+
+ Genotypes missings after cleannig (%):  0.000
+
+ Calculating G Matrix 
+    Dgemm MKL #threads=     4    4 Elapsed omp_get_time:     1.2695
+ 
+ Scale by Sum(2pq). Average:   3739.39249155363     
+
+ Detecting samples with similar genotypes
+    elapsed time=     0.0
+
+ *****************************************
+ *  Possible genotype duplicates samples *
+ *****************************************
+
+    i-j number of sample , i-j renumber Id, G(i,j), G(i,i), G(j,j), r(i,j) 
+         174     167    1471     374  0.9719  0.9728  0.9723  0.9993
+         317     249    1591    1626  1.0866  1.0883  1.0875  0.9988
+         646     532    1019     910  0.9483  0.9494  0.9496  0.9987
+        1400    1362     254    1791  1.0108  1.0151  1.0154  0.9957
+        1634    1629     268    1514  0.8955  0.8965  0.8996  0.9972
+        1835    1747    1665     991  1.2335  1.2347  1.2345  0.9991
+        1763    1749     558    1164  1.0581  1.0593  1.0584  0.9992
+        1841    1824     272    1744  1.0143  1.0147  1.0146  0.9996
+    elapsed time=     0.0
+ 
+ Blend G as alpha*G + beta*A22: (alpha,beta)     0.950     0.050
+
+ Tuning: Scale G matrix according to A22 -  Method: 2
+    Diagonal A:    1.000    Offdiagonal A:    0.004    All A:    0.005    Difference:   0.996
+    Diagonal G:    1.030    Offdiagonal G:   -0.000    All G:    0.000    Difference:   1.030
+    Diff G Diag - G OffDiag:    1.030    (da-oa)/(dg-og):    0.967
+    Diff A OffDiag - G OffDiag:    0.004
+    Diff A all - G all:    0.004
+    New Alpha:   0.919   New Beta:   0.048
+    a + G*b; a:  0.004       b:  0.967
+ Method to select individuals: 1
+ Number of individual selected: 1884
+
+ Frequency - Diagonal of G
+    N:        1884
+    Mean:        1.000
+    Min:         0.804
+    Max:         1.252
+    Range:       0.022
+    Class:     20
+ 
+  #Class       Class   Count
+       1  0.8044           3
+       2  0.8268           4
+       3  0.8492          18
+       4  0.8716          42
+       5  0.8940         102
+       6  0.9163         178
+       7  0.9387         235
+       8  0.9611         234
+       9  0.9835         237
+      10   1.006         218
+      11   1.028         214
+      12   1.051         134
+      13   1.073          92
+      14   1.095          70
+      15   1.118          46
+      16   1.140          27
+      17   1.163          20
+      18   1.185           7
+      19   1.207           2
+      20   1.230           1
+      21   1.252           0
+ 
+
+ Check for diagonal of genomic relationship matrix
+
+
+ Check for diagonal of genomic relationship matrix, genotypes not removed: 0
+
+ ------------------------------
+  Final Pedigree-Based Matrix 
+ ------------------------------
+ 
+ Statistic of Rel. Matrix A22
+                            N      Mean       Min       Max       Var
+     Diagonal            1884     1.000     1.000     1.000     0.000
+     Off-diagonal     3547572     0.004     0.000     0.500     0.002
+ 
+
+ ----------------------
+  Final Genomic Matrix 
+ ----------------------
+ 
+ Statistic of Genomic Matrix
+                            N      Mean       Min       Max       Var
+     Diagonal            1884     1.000     0.804     1.252     0.004
+     Off-diagonal     3547572     0.004    -0.271     1.162     0.009
+ 
+
+ Correlation of Genomic Inbreeding and Pedigree Inbreeding
+     Correlation:     0.0000
+ 
+ Diagonal elements
+    Estimating Regression Coefficients G = b0 11' + b1 A + e
+    Regression coefficients b0 b1 =  -Infinity  Infinity
+
+    Correlation diagonal elements G & A  Infinity
+ 
+ All elements - Diagonal / Off-Diagonal
+    Estimating Regression Coefficients G = b0 11' + b1 A + e
+    Regression coefficients b0 b1 =     -0.000     1.005
+
+    Correlation all elements G & A     0.512
+ 
+ Off-Diagonal
+    Using 29494 elements from A22 >= .02000
+
+    Estimating Regression Coefficients G = b0 11' + b1 A + e
+    Regression coefficients b0 b1 =      0.514    -0.022
+
+    Correlation Off-Diagonal elements G & A    -0.004
+ 
+ ***********************************************************************
+ * CORRELATION FOR OFF-DIAGONALS G & A22 IS LOW THAN  0.50  !!!!!  *
+ * MISIDENTIFIED GENOMIC SAMPLES OR POOR QUALITY GENOMIC DATA *
+ ***********************************************************************
+
+ Creating A22-inverse 
+    Inverse LAPACK MKL dpotrf/i  #threads=    4    4 Elapsed omp_get_time:     0.0941
+
+ ----------------------
+  Final A22 Inv Matrix 
+ ----------------------
+ 
+ Statistic of Inv. Rel. Matrix A22
+                            N      Mean       Min       Max       Var
+     Diagonal            1884     1.842     1.000     1.959     0.014
+     Off-diagonal     3547572    -0.001    -0.667     0.000     0.000
+ 
+ 
+ Creating G-inverse 
+    Inverse LAPACK MKL dpotrf/i  #threads=    4    4 Elapsed omp_get_time:     0.0941
+
+ --------------------------
+  Final Genomic Inv Matrix 
+ --------------------------
+ 
+ Statistic of Inv. Genomic Matrix
+                            N      Mean       Min       Max       Var
+     Diagonal            1884    12.528     4.733    25.291     3.198
+     Off-diagonal     3547572    -0.007   -16.625     3.968     0.066
+ 
+
+ Check for diagonal of Inverse Genomic - Inverse of pedigree relationship matrix
+
+
+ ------------------------------
+  Final G Inv - A22 Inv Matrix 
+ ------------------------------
+ 
+ Statistic of Inv. Genomic - A22 Matrix
+                            N      Mean       Min       Max       Var
+     Diagonal            1884    10.686     2.838    23.382     2.997
+     Off-diagonal     3547572    -0.006   -16.443     4.009     0.064
+ 
+
+*--------------------------------------------------*
+* Setup Genomic Done !!!, elapsed time:      3.976 *
+*--------------------------------------------------*
+
+ wGimA22i   1.00000000000000     
+hash matrix increased from            8192 to           16384 % filled:     0.8000
+hash matrix increased from           16384 to           32768 % filled:     0.8000
+hash matrix increased from           32768 to           65536 % filled:     0.8000
+hash matrix increased from           65536 to          131072 % filled:     0.8000
+hash matrix increased from          131072 to          262144 % filled:     0.8000
+hash matrix increased from          262144 to          524288 % filled:     0.8000
+hash matrix increased from          524288 to         1048576 % filled:     0.8000
+hash matrix increased from         1048576 to         2097152 % filled:     0.8000
+hash matrix increased from         2097152 to         4194304 % filled:     0.8000
+hash matrix increased from           65536 to          131072 % filled:     0.8000
+hash matrix increased from          131072 to          262144 % filled:     0.8000
+hash matrix increased from          262144 to          524288 % filled:     0.8000
+hash matrix increased from          524288 to         1048576 % filled:     0.8000
+hash matrix increased from         1048576 to         2097152 % filled:     0.8000
+hash matrix increased from         2097152 to         4194304 % filled:     0.8000
+hash matrix increased from         4194304 to         8388608 % filled:     0.8000
+hash matrix increased from         8388608 to        16777216 % filled:     0.8000
+ finished peds in    37.89071      s,                 7136899  nonzeroes
+ rank=        5610
+
+ YAMS: Yet Another MME Solver  Version 1.1.5           
+--------------------------------------------------------------
+ Original MME:
+   No. of Equations                =          5610
+   No. of Nonzeros                 =       7136899
+   IA byte type                    =             4
+   Ordering Method                 =           AMD
+   Factor Type                     =           LDL
+   Algorithm for Factorization     =         SN LL
+   Algorithm for Inversion         =         INVMF
+ Supernodes (SNs):
+   No. of SNs.                     =           752
+   No. of Cols. in the Last SN.    =          3770
+   Frequent No. of Cols.           =             2
+   Its Count                       =           582
+   Its Ratio (%)                   =      77.39362
+   Threshold of Split              =    2147483647
+ Factor (L):
+   User-defined Constraint         =             0
+   Rank                            =          5610
+   No. of Constraints              =             0
+   Panel Size                      =           256
+   Tolerances for Kachman mod.     =     1.000E-10     1.000E-10
+   Detection of Panel Size (1:YES) =             0
+ Memory:
+   No. of Effective Entries in L   =       7140567
+   No. of Allocated Entries in L   =       7898148
+   Storage for L              (MB) =          60.3
+   Storage for Integer Arrays (MB) =           0.1
+   Temp. Mem. for FACT.       (MB) =           0.0
+   Temp. Mem. for INV.        (MB) =          25.7
+ CPU & System Time in the last call:
+   Ordering                  (sec) =           1.3           0.4
+   Symbolic Fact.            (sec) =           0.7           0.7
+   Numerical Fact.           (sec) =           1.0           0.4
+   Sparse Inversion          (sec) =           2.5           0.6
+   Solution                  (sec) =           0.1           0.0
+
+ -2logL =    6819.39988315096       : AIC =    6837.39988315096     
+  In round            1  convergence=  1.210176857566037E-010
+  delta convergence=  8.962926067149743E-006
+ new R
+   1.9043      0.75834E-01
+  0.75834E-01  0.14871    
+ new G
+   3.2598      0.19932    
+  0.19932      0.50013E-01
+ new G
+   1.4323      0.47714E-01
+  0.47714E-01  0.36955E-01
+ * START iteration: 01-04-2023  19h 24m 01s 699
+ -2logL =    6819.39988292828       : AIC =    6837.39988292828     
+  In round            2  convergence=  5.893207696722686E-012
+  delta convergence=  1.405804807456810E-006
+ new R
+   1.9043      0.75834E-01
+  0.75834E-01  0.14871    
+ new G
+   3.2598      0.19932    
+  0.19932      0.50013E-01
+ new G
+   1.4323      0.47714E-01
+  0.47714E-01  0.36955E-01
+ -2logL =    6819.39988291411       : AIC =    6837.39988291411     
+  In round            3  convergence=  1.708887070997795E-013
+  delta convergence=  2.451745763205847E-007
+ new R
+   1.9043      0.75834E-01
+  0.75834E-01  0.14871    
+ new G
+   3.2598      0.19932    
+  0.19932      0.50013E-01
+ new G
+   1.4323      0.47714E-01
+  0.47714E-01  0.36955E-01
+ * END iteration: 01-04-2023  19h 24m 01s 699
+ solutions and s.e. stored in file: "solutions"
+
+Final Estimates
+ Genetic variance(s) for effect  2       
+   3.2598      0.19932    
+  0.19932      0.50013E-01
+   correlations
+   1.0000      0.49364    
+  0.49364       1.0000    
+   eigenvectors
+  0.61741E-01 -0.99809    
+ -0.99809     -0.61741E-01
+  eigenvalues
+  0.37683E-01   3.2721    
+ Genetic variance(s) for effect  3       
+   1.4323      0.47714E-01
+  0.47714E-01  0.36955E-01
+   correlations
+   1.0000      0.20739    
+  0.20739       1.0000    
+   eigenvectors
+  0.34136E-01 -0.99942    
+ -0.99942     -0.34136E-01
+  eigenvalues
+  0.35325E-01   1.4339    
+ Residual variance(s)
+   1.9043      0.75834E-01
+  0.75834E-01  0.14871    
+   correlations
+   1.0000      0.14250    
+  0.14250       1.0000    
+   eigenvectors
+  0.43076E-01 -0.99907    
+ -0.99907     -0.43076E-01
+  eigenvalues
+  0.14544       1.9075    
+ inverse of AI matrix (Sampling Variance)
+  0.73607E-01  0.40710E-02  0.22707E-03 -0.83829E-02 -0.30795E-03 -0.11443E-04 -0.15531E-02 -0.54165E-04 -0.18403E-05
+  0.40710E-02  0.10386E-02  0.10164E-03 -0.43693E-03 -0.12796E-03 -0.80753E-05 -0.32134E-04 -0.65673E-04 -0.46219E-05
+  0.22707E-03  0.10164E-03  0.45840E-04 -0.23847E-04 -0.13998E-04 -0.67303E-05  0.59041E-06 -0.36146E-05 -0.96515E-05
+ -0.83829E-02 -0.43693E-03 -0.23847E-04  0.46864E-01  0.20226E-02  0.92116E-04 -0.86405E-02 -0.43133E-03 -0.22508E-04
+ -0.30795E-03 -0.12796E-03 -0.13998E-04  0.20226E-02  0.91702E-03  0.78565E-04 -0.43014E-03 -0.20667E-03 -0.19945E-04
+ -0.11443E-04 -0.80753E-05 -0.67303E-05  0.92116E-04  0.78565E-04  0.64619E-04 -0.22468E-04 -0.20107E-04 -0.17984E-04
+ -0.15531E-02 -0.32134E-04  0.59041E-06 -0.86405E-02 -0.43014E-03 -0.22468E-04  0.91389E-02  0.39007E-03  0.17211E-04
+ -0.54165E-04 -0.65673E-04 -0.36146E-05 -0.43133E-03 -0.20667E-03 -0.20107E-04  0.39007E-03  0.32880E-03  0.26744E-04
+ -0.18403E-05 -0.46219E-05 -0.96515E-05 -0.22508E-04 -0.19945E-04 -0.17984E-04  0.17211E-04  0.26744E-04  0.44023E-04
+ Correlations from inverse of AI matrix
+   1.0000      0.46559      0.12362     -0.14273     -0.37483E-01 -0.52468E-02 -0.59882E-01 -0.11010E-01 -0.10223E-02
+  0.46559       1.0000      0.46580     -0.62626E-01 -0.13111     -0.31171E-01 -0.10430E-01 -0.11238     -0.21615E-01
+  0.12362      0.46580       1.0000     -0.16270E-01 -0.68276E-01 -0.12366      0.91218E-03 -0.29442E-01 -0.21485    
+ -0.14273     -0.62626E-01 -0.16270E-01   1.0000      0.30853      0.52934E-01 -0.41751     -0.10988     -0.15670E-01
+ -0.37483E-01 -0.13111     -0.68276E-01  0.30853       1.0000      0.32274     -0.14858     -0.37637     -0.99266E-01
+ -0.52468E-02 -0.31171E-01 -0.12366      0.52934E-01  0.32274       1.0000     -0.29237E-01 -0.13794     -0.33719    
+ -0.59882E-01 -0.10430E-01  0.91218E-03 -0.41751     -0.14858     -0.29237E-01   1.0000      0.22502      0.27134E-01
+ -0.11010E-01 -0.11238     -0.29442E-01 -0.10988     -0.37637     -0.13794      0.22502       1.0000      0.22229    
+ -0.10223E-02 -0.21615E-01 -0.21485     -0.15670E-01 -0.99266E-01 -0.33719      0.27134E-01  0.22229       1.0000    
+ SE for G
+  0.27131      0.32228E-01
+  0.32228E-01  0.67705E-02
+ SE for G
+  0.21648      0.30282E-01
+  0.30282E-01  0.80386E-02
+ SE for R
+  0.95598E-01  0.18133E-01
+  0.18133E-01  0.66350E-02
+ * FINISHED (AIREMLF90): 01-04-2023  19h 24m 16s 452

@@ -1,0 +1,43 @@
+DATAFILE 
+data.txt
+TRAITS
+4 7
+FIELDS_PASSED TO OUTPUT
+1
+WEIGHT(S)
+
+RESIDUAL_VARIANCE
+   1.9043      0.75834E-01
+  0.75834E-01  0.14871     
+EFFECT
+2 2 cross alpha    # 1st effect fixed (sex)
+EFFECT
+3 3 cross alpha    # 2nd effect random (litter)
+RANDOM
+diagonal
+(CO)VARIANCES
+   3.2598      0.19932    
+  0.19932      0.50013E-01  
+EFFECT           # 3rd effect random (animal)
+1 1 cross alpha
+RANDOM
+animal
+FILE
+pedigree.txt
+FILE_POS
+1 2 3
+SNP_FILE
+genotypes.txt
+PED_DEPTH
+0
+(CO)VARIANCES
+   1.4323      0.47714E-01
+  0.47714E-01  0.36955E-01
+OPTION verify_parentage 0
+OPTION sol se
+OPTION use_yams
+OPTION missing 0
+OPTION alpha_size 40
+OPTION max_string_readline 800 
+OPTION max_field_readline 100
+OPTION thrStopCorAG -1 # This option should be used as sparingly as possible. It is used here due to the errors of the example data.
