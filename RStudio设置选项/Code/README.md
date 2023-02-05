@@ -544,9 +544,9 @@ Ctrl+Enter执行
 <br>  
 文章配套教程视频及其他平台文章链接：
 
-[RStudio设置选项（全）——1.General - bilibili](https://www.bilibili.com/video/BV1NA411o7jw/)
+[RStudio设置选项（全）——2.Code - bilibili](https://www.bilibili.com/video/BV1NA411o7jw/)
 
-[RStudio设置选项（全）——1.General - 知乎](https://zhuanlan.zhihu.com/p/597776008)
+[RStudio设置选项（全）——2.Code - 知乎](https://zhuanlan.zhihu.com/p/597776008)
 
 <br>
 
