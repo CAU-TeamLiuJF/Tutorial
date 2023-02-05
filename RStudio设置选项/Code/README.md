@@ -498,7 +498,7 @@ Ctrl+Enter执行
 - [x] **Prompt to install missing R packages discovered in R source files**  
 提示用户本机未安装但R脚本中将调用的R包  
   >  
-  >_<u>请注意，若脚本文件中存在未解决的Error诊断信息，则不会检查脚本中是否使用了未安装的包。若存在未显示诊断信息的不可执行代码（如在4.1以下版本的R中使用管道符|>），此时也无法提示安装</u>_  
+  >_<u>请注意，若脚本文件中存在未解决的Error诊断信息，则不会检查脚本中是否使用了未安装的包</u>_  
     
   ![未安装包提示](/RStudio设置选项/Code/image/未安装包提示.png)  
     
