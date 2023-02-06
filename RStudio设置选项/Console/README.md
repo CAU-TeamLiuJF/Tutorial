@@ -28,14 +28,14 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   >  
   > _<u>请注意，高亮在黑色背景下显示更明显</u>_    
   
-   ![控制台语法高亮](/RStudio设置选项/Console/image/控制台语法高亮.PNG)  
+   ![控制台语法高亮](/RStudio设置选项/Console/image/控制台语法高亮.png)  
   
 - [x] **Different color for error or message output (requires restart)**  
 使用不同颜色输出错误和消息通知（更改后需重启生效）  
   > 代码执行结果中的警告/错误信息用红色字体显示，正常输出结果用黑色字体显示    
   > 取消勾选时，控制台所有的打印信息均用黑色字体显示    
   
-  ![控制台错误消息](/RStudio设置选项/Console/image/控制台错误消息.PNG)  
+  ![控制台错误消息](/RStudio设置选项/Console/image/控制台错误消息.png)  
   
 - [x] **Limit visible console output (requires restart)**  
 限制控制台打印的元素数（更改后需重启生效）  
@@ -49,7 +49,7 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   >实际可通过`options(max.print=num)`命令来设置控制台打印的元素数，其中`num`为需要显示的元素数，如10000  
   >例如，在控制台中输入测试数据`df <- data.frame(sam = rnorm(10000),sam2 = rnorm(10000))`后，查看`df`数据对象  
   
-  ![控制台输出元素数](/RStudio设置选项/Console/image/控制台输出元素数.PNG)  
+  ![控制台输出元素数](/RStudio设置选项/Console/image/控制台输出元素数.png)  
   
 - **ANSI Escape Codes**: `Show ANSI colors`  
   
@@ -61,7 +61,7 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   2.`remove ANSI colors`: 删除ANSI转义代码中的颜色  
   3.`ignore ANSI colors (1.0 behavior)`: 忽略ANSI转义代码中的颜色  
   
-  ![控制台ANSI代码](/RStudio设置选项/Console/image/控制台ANSI代码.PNG)  
+  ![控制台ANSI代码](/RStudio设置选项/Console/image/控制台ANSI代码.png)  
   
 ## 3.2 Execution  
   
