@@ -24,7 +24,7 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 - [x] **Show syntax highlighting in console input**  
 在控制台输入的代码显示语法高亮  
   > 对控制台输入的R代码语句进行高亮显示，同时也可部分支持Python语句的高亮显示    
-  > 默认情况下，此选项对控制台中输入的代码生效    
+  > 默认情况下，此选项是关闭状态   
   >  
   > _<u>请注意，高亮在黑色背景下显示更明显</u>_    
   
