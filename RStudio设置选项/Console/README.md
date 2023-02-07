@@ -45,23 +45,21 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   > _<u>请注意，经测试发现该版本RStudio在非勾选该选项的情况下，控制台只显示最近1000行的内容，并且此时修改限制长度对控制行显示的内容条数无影响</u>_    
 
 - **Limit output line length to**:`1000`  
-  
-  > 限制控制台保留的输出对象长度为: `1000`    
-  >  
+限制控制台保留的输出对象长度为: `1000`      
   >实际可通过`options(max.print=num)`命令来设置控制台打印的元素数，其中`num`为需要显示的元素数，如10000  
   >例如，在控制台中输入测试数据`df <- data.frame(sam = rnorm(10000),sam2 = rnorm(10000))`后，查看`df`数据对象  
   
   ![控制台输出元素数](/RStudio设置选项/Console/image/控制台输出元素数.png)  
   
 - **ANSI Escape Codes**: `Show ANSI colors`  
-  
+ANSI转义代码    
+  > 1.`show ANSI colors`: 显示ANSI转义代码中的颜色  
+  > 2.`remove ANSI colors`: 删除ANSI转义代码中的颜色  
+  > 3.`ignore ANSI colors (1.0 behavior)`: 忽略ANSI转义代码中的颜色 
+  >   
   > ANSI是用来控制终端的代码，可以控制的内容有颜色，光标位置，字体等等    
-  > RStudio的控制台支持使用标准的ANSI转义序列输出的包含颜色和高亮显示功能，使控制台显示出彩色或带样式的文本内容    
-  >  
-  > ANSI转义代码    
-  1.`show ANSI colors`: 显示ANSI转义代码中的颜色  
-  2.`remove ANSI colors`: 删除ANSI转义代码中的颜色  
-  3.`ignore ANSI colors (1.0 behavior)`: 忽略ANSI转义代码中的颜色  
+  > RStudio的控制台支持使用标准的ANSI转义序列输出的包含颜色和高亮显示功能，使控制台显示出彩色或带样式的文本内容      
+ 
   
   ![控制台ANSI代码](/RStudio设置选项/Console/image/控制台ANSI代码.png)  
   
@@ -69,9 +67,9 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   
 - [x] **Discard pending console input on error**  
 出现错误时放弃挂起的控制台输入  
-  > 在活动文件中一次选中多行代码，按`Ctrl+Enter`运行时，勾选此选项代码将在出现错误的行停止执行，不再执行后续代码    
+  > 在Source面板的活动文件中一次选中多行代码，按`Ctrl+Enter`运行时，勾选此选项代码将在出现错误的行停止执行，不再执行后续代码    
   >  
-  > _<u>请注意，启用此选项要求R语言版本在4.2及以上此外，若点击Source面板右上角的Source按钮运行整个脚本，无论此选项是否启用，代码也会在出现错误的行停止执行</u>_    
+  > _<u>请注意，启用此选项要求R语言版本在4.2及以上。此外，若点击Source面板右上角的Source按钮运行整个脚本，无论此选项是否启用，代码也会在出现错误的行停止执行</u>_    
   
   ![错误行后停止执行](/RStudio设置选项/Console/image/错误行后停止执行.PNG)  
   
@@ -94,8 +92,8 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   
 - [x] **Warn when automatic session suspension is paused**  
   当**自动会话挂起**暂停时显示警告  
-  > RStudio会话现在提供对会话状态的更深入见解，这些状态将防止会话自动挂起这对于**RStudio cloud**用户、**RStudio Server**或**RStudio Workbench**环境特别有用在这些环境中，用户需要按会话所处活动状态的时间进行付费    
-  > 为了指示RStudio正在执行**阻止自动挂起**的操作，控制台工具栏中会出现一个新图标将鼠标悬停在图标上将列出当前阻止自动挂起的所有内容    
+  > RStudio会话现在提供对会话状态的更深入见解，这些状态将防止会话自动挂起。这对于**RStudio cloud**用户、**RStudio Server**或**RStudio Workbench**环境特别有用在这些环境中，用户需要按会话所处活动状态的时间进行付费    
+  > 为了指示RStudio正在执行**阻止自动挂起**的操作，控制台工具栏中会出现一个新图标。将鼠标悬停在图标上将列出当前阻止自动挂起的所有内容    
   >  
   > _<u>请注意，以上解释来源于[Posit社区](https://community.rstudio.com/t/rstudio-workbench-2022-02-0-release/129963#session-suspension)，实际未能验证该选项的功能，可能只在Pro版本中生效</u>_    
   
@@ -108,7 +106,7 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 
 [RStudio设置选项（全）——3.Console - bilibili]()
 
-[RStudio设置选项（全）——3.Console - 知乎]()
+[RStudio设置选项（全）——3.Console - 知乎](https://zhuanlan.zhihu.com/p/603193655)
 
 <br>
 
