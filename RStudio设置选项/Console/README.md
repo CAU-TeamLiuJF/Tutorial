@@ -104,7 +104,7 @@ ANSI转义代码
 <br>  
 文章配套教程视频及其他平台文章链接：
 
-[RStudio设置选项（全）——3.Console - bilibili]()
+[RStudio设置选项（全）——3.Console - bilibili](https://www.bilibili.com/video/BV1qY411q7Mv/?spm_id_from=333.999.0.0&vd_source=80ce2b6dd4bbbedb3ac586032c344bca)
 
 [RStudio设置选项（全）——3.Console - 知乎](https://zhuanlan.zhihu.com/p/603193655)
 
