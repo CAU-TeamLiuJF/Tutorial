@@ -62,7 +62,7 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 > 4.切换回 RStudio 的默认主题  
 > 5.自定义主题  
   
-![主题切换和esthemes包](/RStudio设置选项/Appearance/image/主题切换和esthemes包.gif)
+![主题切换和rsthemes包](/RStudio设置选项/Appearance/image/主题切换和rsthemes包.gif)
   
 
 <br>  
