@@ -23,20 +23,20 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 >  
 >  _<u>请注意，RStudio主题（RStudio theme）只在编辑器主题（Editor theme）切换时才生效，暗色主题下效果不明显</u>_  
   
-![RStudio主题](/RStudio设置选项/Code/image/RStudio主题.gif)  
+![RStudio主题](/RStudio设置选项/Appearance/image/RStudio主题.gif)  
   
 **Zoom**: `100%`  
   缩放  
 > 整个RStudio界面所有元素的缩放比例  
   
-![全局缩放](/RStudio设置选项/Code/image/全局缩放.png)  
+![全局缩放](/RStudio设置选项/Appearance/image/全局缩放.png)  
   
 **Editor font**: `Fira Code SemiBold`  
   编辑器字体  
 > 设置的字体作用于除了右下角面板（文件、作图、包等窗口）的其他三个面板的大部分窗口  
 > 推荐用**Fira Code SemiBold**字体，Fira是Mozilla公司主推的字体系列，**Fira Code**是基于Fira Mono等宽字体的一个扩展，主要特点是加入了**编程连字特性（ligatures）**，可以让代码更加美观，更加易读。**Fira Code SemiBold**是 Fira Code 字体家族的半粗体版本。[Fira Code | 一个程序员专用字体](https://zhuanlan.zhihu.com/p/28134371)  
   
-![Fira字体](/RStudio设置选项/Code/image/Fira字体.png)  
+![Fira字体](/RStudio设置选项/Appearance/image/Fira字体.png)  
   
 **Text rendering**: `(Default)`  
   文本渲染  
@@ -62,7 +62,7 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 > 4.切换回 RStudio 的默认主题  
 > 5.自定义主题  
   
-![主题切换和esthemes包](/RStudio设置选项/Code/image/主题切换和esthemes包.gif)
+![主题切换和esthemes包](/RStudio设置选项/Appearance/image/主题切换和esthemes包.gif)
   
 
 <br>  
