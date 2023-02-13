@@ -15,7 +15,7 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 
 #  4. Appearance  
   
-**RStudio theme**: `Modern`  
+- **RStudio theme**: `Modern`  
   Rstudio主题  
 > 用于自定义RStudio IDE用户界面的全局主题  
 > `Modern`：该主题使用了与RStudio 1.0类似的调色板，但是将所有用户界面元素变平: 面板、按钮、对话框等  
@@ -31,24 +31,24 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
   
 ![全局缩放](/RStudio设置选项/Appearance/image/全局缩放.png)  
   
-**Editor font**: `Fira Code SemiBold`  
+- **Editor font**: `Fira Code SemiBold`  
   编辑器字体  
 > 设置的字体作用于除了右下角面板（文件、作图、包等窗口）的其他三个面板的大部分窗口  
 > 推荐用**Fira Code SemiBold**字体，Fira是Mozilla公司主推的字体系列，**Fira Code**是基于Fira Mono等宽字体的一个扩展，主要特点是加入了**编程连字特性（ligatures）**，可以让代码更加美观，更加易读。**Fira Code SemiBold**是 Fira Code 字体家族的半粗体版本。[Fira Code | 一个程序员专用字体](https://zhuanlan.zhihu.com/p/28134371)  
   
 ![Fira字体](/RStudio设置选项/Appearance/image/Fira字体.png)  
   
-**Text rendering**: `(Default)`  
+- **Text rendering**: `(Default)`  
   文本渲染  
 >  定义渲染引擎如何渲染字体   
 >  `(Default)`:以默认值绘制文本  
 >  `geometricPrecision`:在绘制文本时将着重考虑几何精度，而不是渲染速度和易读性  
   
-**Editor font size**: `12`  
+- **Editor font size**: `12`  
 编辑器字体大小  
 > 与字体设置选项的作用范围一致  
   
-**Editor theme**: `Textmate(default)`  
+- **Editor theme**: `Textmate(default)`  
   编辑器主题  
 > 用户可以使用不同的主题自定义RStudio。获取主题的途径有：  
 > 1.内置RStudio主题  
@@ -68,9 +68,9 @@ R语言集成开发环境（IDE）RStudio软件设置选项（**Global Options**
 <br>  
 文章配套教程视频及其他平台文章链接：
 
-[RStudio设置选项（全）——2.Code - bilibili]()
+[RStudio设置选项（全）——2.Code - bilibili](https://www.bilibili.com/video/BV1F54y1P75g/?spm_id_from=333.999.0.0&vd_source=80ce2b6dd4bbbedb3ac586032c344bca)
 
-[RStudio设置选项（全）——2.Code - 知乎](h)
+[RStudio设置选项（全）——2.Code - 知乎](https://zhuanlan.zhihu.com/p/605485224)
 
 <br>
 
