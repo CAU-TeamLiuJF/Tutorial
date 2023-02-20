@@ -1,0 +1,38 @@
+DATAFILE
+data.txt
+TRAITS
+4
+FIELDS_PASSED TO OUTPUT
+1
+WEIGHT(S)
+
+RESIDUAL_VARIANCE
+   1
+EFFECT
+2 cross alpha    # 1st effect fixed (sex)
+EFFECT
+3 cross alpha    # 2nd effect random (litter)
+RANDOM
+diagonal
+(CO)VARIANCES
+   1
+EFFECT
+1 cross alpha    # 3rd effect random (pe)
+RANDOM
+diagonal
+(CO)VARIANCES
+   1
+EFFECT           # 4th effect random (animal)
+1 cross alpha
+RANDOM
+animal
+FILE
+pedigree.txt
+FILE_POS
+1 2 3
+PED_DEPTH
+0
+(CO)VARIANCES
+   1
+OPTION sol se
+OPTION missing 0

@@ -4,10 +4,12 @@
 
 ## 目录
 
-1. [RStudio设置选项](/RStudio设置选项)  
-   1.[General](/RStudio设置选项/General)  
-   2.[Code](/RStudio设置选项/Code)  
-   3.[Console](/RStudio设置选项/Console)   
-   4.[Appearance](/RStudio设置选项/Appearance)   
-2. [Shell脚本编程](/Shell脚本编程)  
-3. [遗传评估软件](/遗传评估软件)  
+1. [RStudio设置选项](/RStudio设置选项)
+   1. [General](/RStudio设置选项/General)
+   2. [Code](/RStudio设置选项/Code)
+   3. [Console](/RStudio设置选项/Console)
+   4. [Appearance](/RStudio设置选项/Appearance)
+2. [Shell脚本编程](/Shell脚本编程)
+3. [遗传评估软件](/遗传评估软件)
+   1. [DMU](/遗传评估软件/DMU)
+   2. [BLUPF90](/遗传评估软件/BLUPF90)
