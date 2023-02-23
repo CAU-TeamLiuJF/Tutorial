@@ -57,7 +57,7 @@
   
 ### 1.1.1 ABLUP模型  
   
-ABLUP模型是一种基于**谱系**的混合线性模型，用**A矩阵**来计算育种值  
+ABLUP模型是一种基于**系谱**的混合线性模型，用**A矩阵**来计算育种值  
   
 $$\left[\begin{array}{cc}  
 \mathbf{X}^{\prime} \mathbf{X} & \mathbf{X}^{\prime} \mathbf{Z} \\  
@@ -108,16 +108,43 @@ $$\left[\begin{array}{cc}
 $$\mathbf{H}^{-1}=\mathbf{A}^{-1}+\left[\begin{array}{cc}  
 \mathbf{0} & \mathbf{0} \\  
 \mathbf{0} & \mathbf{G}^{-1}-\mathbf{A}_{22}^{-1}  
-\end{array}\right]$$  
-$$\mathbf{A}_{22}:基因分型个体组成的\mathbf{A}阵$$  
+\end{array}\right]$$    
+
+$$\mathbf{A}_{22}:基因分型个体组成的A阵$$  
+
+<br>  
   
-![混合亲缘关系矩阵H](遗传评估软件/BLUPF90/image/混合亲缘关系矩阵H.PNG)  
+$$\begin{array}{ccc}  
+\hline \text { Animal } & \text { Sire } & \text { Dam } \\  
+\hline 1 & 0 & 0 \\  
+2 & 0 & 0 \\  
+{\color{Red} 3}  & 1 & 2 \\  
+{\color{Red} 4}  & 1 & 2 \\  
+\hline  
+\end{array}  
+\left[\begin{array}{cccc}  
+1.0 & 0.0 & 0.5 & 0.5 \\  
+\cdot & 1.0 & 0.5 & 0.5 \\  
+. & . & 1.0 & 0.5 \\  
+. & . & . & 1.0  
+\end{array}\right]\\  
+{\color{Red} \left[\begin{array}{cc}  
+1.0 & 0.52 \\  
+. & 1.0  
+\end{array}\right]}\left[\begin{array}{cccc}  
+1.004 & 0.0 & 0.507 & 0.507 \\  
+. & 1.004 & 0.507 & 0.507 \\  
+\cdot & . & {\color{Red} 1.0 } &{\color{Red}  0.52}  \\  
+. & . &{\color{Red}  . } &{\color{Red}  1.0}   
+\end{array}\right]$$
+
+$$\text{系谱  A矩阵   G矩阵  H矩阵}$$  
   
 # 2. 软件概况  
   
 # 2.1 发展历史  
   
-1997年由佐治亚大学的 _Ignacy Misztal_ 开发，最初是为了课程教学，时至今日仍在不断更新，最新版**2023-01-25**发布  
+1997年由佐治亚大学的 _Ignacy Misztal_ 开发，最初是为了课程教学，时至今日仍在不断更新，Linux版本最新版**2023-01-25**发布  
   
 # 2.2 使用权限  
   
@@ -213,20 +240,7 @@ $$\begin{matrix}
 - 等位基因应该从每行的相同位置起始  
 - 长度不同的ID需要用**空格补齐**  
   
-$$\begin{matrix}  
-\space\space\space6&1121111211211021111121...\\  
-\space\space96&1111212111212112110211...\\  
-\space996&0200202002222202210211...\\  
-\space997&2022222220202022020222...\\  
-\space998&0210101102221111201110...\\  
-\space999&0200202002222202200200...\\  
-1000&1111112211211021111121...\\  
-1001&0200101102221111201110...\\  
-1002&0200202002222202210211...\\  
-1003&1111212111212112110211...\\  
-1004&1111111211211021111121...\\  
-1005&1121111211211021111121...  
-\end{matrix}$$  
+![基因组数据文件](遗传评估软件/BLUPF90/image/基因组数据文件.PNG)
   
 ## 3.2 参数文件  
   
