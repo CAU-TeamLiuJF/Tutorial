@@ -156,7 +156,7 @@ $$\text{系谱  A矩阵   G矩阵  H矩阵}$$
 - Linux, Mac OSX, Windows  
 - 推荐使用[Linux版本](http://nce.ads.uga.edu/html/projects/programs/)  
   
-![下载](遗传评估软件/BLUPF90/image/下载.PNG)  
+![下载](/遗传评估软件/BLUPF90/image/下载.png)  
   
 # 2.4 软件模块  
   
@@ -164,7 +164,7 @@ $$\text{系谱  A矩阵   G矩阵  H矩阵}$$
 - 本次主要介绍**遗传评估**部分  
 - 完整模块信息可参阅[application_programs[BLUPF90]](http://nce.ads.uga.edu/wiki/doku.php?id=application_programs)  
   
-![软件模块](遗传评估软件/BLUPF90/image/软件模块.PNG)  
+![软件模块](/遗传评估软件/BLUPF90/image/软件模块.png)  
   
 # 2.5 使用流程（遗传评估）  
   
@@ -240,7 +240,7 @@ $$\begin{matrix}
 - 等位基因应该从每行的相同位置起始  
 - 长度不同的ID需要用**空格补齐**  
   
-![基因组数据文件](遗传评估软件/BLUPF90/image/基因组数据文件.PNG)
+![基因组数据文件](/遗传评估软件/BLUPF90/image/基因组数据文件.png)
   
 ## 3.2 参数文件  
   
