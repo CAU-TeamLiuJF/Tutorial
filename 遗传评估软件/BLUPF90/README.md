@@ -28,24 +28,24 @@
   - [3.2 参数文件](#32-参数文件)  
     - [3.2.1 参数文件整体要求](#321-参数文件整体要求)  
     - [3.2.2 必要参数](#322-必要参数)  
-      - [**DATAFILE**](#datafile)  
-      - [**TRAITS**](#traits)  
-      - [**FIELDS\_PASSED TO OUTPUT**](#fields_passed-to-output)  
-      - [**WEIGHT(S)**](#weights)  
-      - [**RESIDUAL\_VARIANCE**](#residual_variance)  
-      - [**EFFECT**](#effect)  
+      - [DATAFILE](#datafile)  
+      - [TRAITS](#traits)  
+      - [FIELDS\_PASSED TO OUTPUT](#fields_passed-to-output)  
+      - [WEIGHT(S)](#weights)  
+      - [RESIDUAL\_VARIANCE](#residual_variance)  
+      - [EFFECT](#effect)  
     - [3.2.3 可选参数](#323-可选参数)  
-      - [**RANDOM**](#random)  
-      - [**FILE**](#file)  
-      - [**FILE\_POS**](#file_pos)  
-      - [**SNP\_FILE**](#snp_file)  
-      - [**PED\_DEPTH**](#ped_depth)  
-      - [**(CO)VARIANCES**](#covariances)  
-    - [效应定义小结](#效应定义小结)  
+      - [RANDOM](#random)  
+      - [FILE](#file)  
+      - [FILE\_POS](#file_pos)  
+      - [SNP\_FILE](#snp_file)  
+      - [PED\_DEPTH](#ped_depth)  
+      - [(CO)VARIANCES](#covariances)  
+    - [3.2.4 效应定义小结](#效应定义小结)  
       - [固定效应](#固定效应)  
       - [加性效应](#加性效应)  
       - [永久性随机环境效应](#永久性随机环境效应)  
-    - [额外参数](#额外参数)  
+    - [3.2.5 额外参数](#额外参数)  
   - [3.3 结果文件](#33-结果文件)  
     - [3.3.1 重编码结果文件](#331-重编码结果文件)  
   - [3.3.2 评估结果文件](#332-评估结果文件)  
@@ -181,7 +181,7 @@ _<u>请注意，已知方差组分时可省略方差组分估计步骤</u>_
   
 ### 3.1.1 数据文件整体要求  
   
-- 不应具有标题行  
+- 不应有标题行  
 - 不应出现字符`#`  
 - 使用空格作为分隔符，连续的多个空格将被视为一个分隔  
   - 不能使用制表符`TAB`作为分隔符  
@@ -190,10 +190,9 @@ _<u>请注意，已知方差组分时可省略方差组分估计步骤</u>_
   
 ### 3.1.2 表型数据文件  
   
-- 个体编码可以包含**字母**和**数字**  
+- 个体编码可以包含**字母**和**数字**(DMU中不能包含字母)  
 - 缺失值可任意指定  
-- 整型和浮点型变量无强制**顺序**  
-  - DMU要求整型在前  
+- 整型和浮点型变量无强制**顺序**(DMU要求**整型**在前)    
   
 $$\begin{matrix}  
 整型&&&实型&&&\\  
@@ -211,7 +210,7 @@ $$\begin{matrix}
   
 ### 3.1.3 系谱数据文件  
   
-- 个体编码可以包含**字母**和**数字**  
+- 个体编码可以包含**字母**和**数字**(DMU中不能包含字母)    
 - 系谱可以包含个体、父亲、母亲、受体母亲、出生年  
 - 信息列之间无顺序要求，可以通过参数指定  
 - 个体信息列必须包含在系谱中  
@@ -235,9 +234,9 @@ $$\begin{matrix}
 ### 3.1.4 基因组数据文件  
   
 - 基因组文件为经过调整的**012**格式  
-- 以0、1、2表示双等位基因座中次要等位基因的数量，5表示缺失  
-- 等位基因之间不能具有空格  
-- 等位基因应该从每行的相同位置起始  
+- 以0、1、2表示双等位基因座中次要等位基因的数量，5表示**缺失**  
+- 等位基因之间不能有空格  
+- 等位基因应该从每行的**相同位置**起始  
 - 长度不同的ID需要用**空格补齐**  
   
 ![基因组数据文件](/遗传评估软件/BLUPF90/image/基因组数据文件.png)
@@ -247,7 +246,7 @@ $$\begin{matrix}
 ### 3.2.1 参数文件整体要求  
   
 - 参数文件以关键字和值的**键值对**形式指定  
-- 关键字为全大写，占据单独一行，不应具有其他内容  
+- 关键字为全大写，占据单独一行，不应有其他内容  
 - 部分关键字有严格的**顺序**要求  
 - 参数文件中可以包含`#`引导的注释  
 - 完整的参数列表可以参阅[用户手册](http://nce.ads.uga.edu/wiki/lib/exe/fetch.php?media=blupf90_all8.pdf)  
@@ -287,7 +286,7 @@ $$\begin{matrix}
   
 ### 3.2.2 必要参数  
   
-- 参数文件必须包含六个关键字，且需在参数文件开始时，按如下顺序指定：  
+- 参数文件**必须**包含六个关键字，且需在参数文件开始时，按如下顺序指定：  
   
   - DATAFILE  
   - TRAITS  
@@ -298,7 +297,7 @@ $$\begin{matrix}
   
 #### **DATAFILE**  
   
-- 表型数据文件名  
+- **表型**数据文件名  
   - 文件名中不应包含字符`#`  
   - 可以使用绝对路径或者相对路径  
   
@@ -312,7 +311,7 @@ $$\begin{matrix}
   
 #### **TRAITS**  
   
-- 待评估的性状在表型数据文件中的列位置  
+- 待评估的**性状**在表型数据文件中的列位置  
   - 多个待评估的性状以空格分隔  
   
 - 格式  
@@ -323,14 +322,13 @@ $$\begin{matrix}
 > TRAITS  
 > 4  
   
-或  
-  
+- 示例  
 > TRAITS  
 > 4 5  
   
 #### **FIELDS_PASSED TO OUTPUT**  
   
-- 在结果文件中额外输出原始编码  
+- 在结果文件中额外输出**原始编码**  
   - 默认输出为重编码后的数据  
   - 可以指定多列  
   - 无需指定以空行表示  
@@ -339,7 +337,11 @@ $$\begin{matrix}
 > FIELDS_PASSED TO OUTPUT  
 > p1 p2 .. pm  
   
-- 示例  
+- 示例-输出2、3列原始编码  
+> FIELDS_PASSED TO OUTPUT  
+> 2 3  
+  
+- 示例-不输出原始编码  
 > FIELDS_PASSED TO OUTPUT  
 > <br>  
   
@@ -352,13 +354,17 @@ $$\begin{matrix}
 > WEIGHT(S)  
 > w  
   
-- 示例  
+- 示例-加权数值在第4列  
+> WEIGHT(S)  
+> 4  
+  
+- 示例-不指定加权数值  
 > WEIGHT(S)  
 > <br>  
   
 #### **RESIDUAL_VARIANCE**  
   
-- 残差的方差协方差矩阵  
+- **残差**的方差协方差矩阵  
   - 根据调用的模块不同，可能作为先验值或真值  
   - 矩阵的阶数和待评估的性状相同  
   
@@ -373,7 +379,7 @@ $$\begin{matrix}
   
 #### **EFFECT**  
   
-**最关键的参数**  
+最**关键**的参数   
   
 - e1 e2 e3 …  
   - 效应在表型数据文件中的列数  
@@ -410,9 +416,9 @@ $$\begin{matrix}
   
 #### **RANDOM**  
   
-**必须在EFFECT参数后**  
+必须在**EFFECT**参数后  
   
-- 指定EFFECT为随机效应  
+- 指定EFFECT为**随机效应**  
   - 定义随机效应的方差-协方差矩阵  
     - diagonal: 随机效应  
     - sire : 父系效应  
@@ -428,11 +434,11 @@ $$\begin{matrix}
   
 #### **FILE**  
   
-**必须在RANDOM后指定**  
+必须在**RANDOM**后指定  
   
-**RANDOM必须为sire或animal**  
+RANDOM必须为**sire**或**animal**  
   
-- 指定系谱文件  
+- 指定**系谱文件**  
   - 可以使用绝对路径或者相对路径  
   
 - 格式  
@@ -511,7 +517,7 @@ $$\begin{matrix}
   
 ### 效应定义小结  
   
-- 效应参数按照如下顺序，可以省略，但不可改变顺序  
+- 效应参数按照如下顺序，可以省略，但不可改变**顺序**  
   - EFFECT  
   - RANDOM  
   - FILE  
@@ -557,23 +563,25 @@ $$\begin{matrix}
 ### 额外参数  
   
 - 不影响分析过程的核心  
-- 以OPTION开始，每行定义一个  
-- 均有默认值  
+- 以**OPTION**开始，每行定义一个  
+- 均有**默认值**  
 - 参数可能仅对特定模块有效  
-- 相互之间没有顺序要求。  
+- 相互之间**没有顺序**要求。  
   
 - OPTION missing 0  
-  - 设定缺失值  
+> 设定缺失值  
 - OPTION conv_crit 1e-10  
-  - 设定收敛标准  
+> 设定收敛标准  
 - OPTION maxrounds 5000  
-  - 设定最大迭代次数  
+> 设定最大迭代次数  
 - OPTION solv_method PCG  
-  - 设定求解方法（FSPAK, SOR, PCG）  
+> 设定求解方法（FSPAK, SOR, PCG）  
 - OPTION sol se  
-  - 计算标准误差（求解方法强制为FSPAK，忽略OPTION solv_method ）  
+> 计算标准误差（求解方法强制为FSPAK，忽略OPTION solv_method ）  
 - OPTION use_yams  
-  - 使用YAMS进行分析  
+> 使用YAMS进行分析  
+  
+<br>  
   
 - 格式  
 > OPTION alpha_size nn  
@@ -587,12 +595,12 @@ $$\begin{matrix}
   
 **renf90.par**  
   
-- 参数卡文件的重编码  
+- **参数卡**文件的重编码  
   
 **renf90.dat**  
   
-- 数据文件的重编码  
-- 依次为性状的表型观察值，效应值，**重编码个体ID和原始个体ID**  
+- **数据**文件的重编码  
+- 依次为性状的表型观察值，效应值，**重编码个体ID**和**原始个体ID**  
   
 $$\begin{matrix}  
 20.3&1&499&320&345\\  
@@ -609,8 +617,8 @@ $$\begin{matrix}
   
 **renaddxx.ped**  
   
-- 系谱文件的重编码  
-- xx表示加性效应在renf90.par中的效应编号  
+- **系谱**文件的重编码  
+- xx表示加性效应在**renf90.par**中的效应编号  
   – **第一列**：重编码的个体ID  
   – **第二列**：重编码的父亲ID  
   – **第三列**：重编码的母亲ID  
@@ -656,10 +664,12 @@ $$\begin{matrix}
 # 4. 实践示例  
   
 运行步骤  
-  
-- **数据整理**：renumf90 test.par | tee renumf90.log  
-- **运算**：blupf90 renf90.par | tee blupf90.log  
-  
+
+```  
+**数据整理**：renumf90 test.par | tee renumf90.log  
+**运算**：blupf90 renf90.par | tee blupf90.log  
+```
+
 实际运行材料和参数卡可以在**公众号后台**回复关键字“**BLUPF90**”获取  
 
 <br>   
@@ -668,7 +678,7 @@ $$\begin{matrix}
 
 [BLUPF90软件基本介绍](https://www.bilibili.com/video/BV1cg4y1W7Yv/)  
 
-[BLUPF90软件基本介绍]()  
+[BLUPF90软件基本介绍](https://zhuanlan.zhihu.com/p/609212755)  
 
 <br>
 
