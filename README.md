@@ -10,6 +10,8 @@
    3. [Console](/RStudio设置选项/Console)
    4. [Appearance](/RStudio设置选项/Appearance)
 2. [Shell脚本编程](/Shell脚本编程)
+   1. [简介](/Shell脚本编程/简介)
+   2. [变量](/Shell脚本编程/变量)
 3. [遗传评估软件](/遗传评估软件)
    1. [DMU](/遗传评估软件/DMU)
    2. [BLUPF90](/遗传评估软件/BLUPF90)
