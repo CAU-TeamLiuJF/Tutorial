@@ -1,7 +1,3 @@
-![公众号](/Platform_materials/公众号二维码.jpg)    
-  微信公众号：房子下面一头猪    
-
-<br>
 
 本期内容简介  
 
@@ -451,6 +447,12 @@ echo $MY_READ_ONLY_VAR
 ---  
   
 团队其他公众平台：  
+  
+**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260) 
+  
+**知乎** | [房子下面一头猪](https://www.zhihu.com/people/mang-guo-c-60-10)
+  
 **微信公众号** | 房子下面一头猪  
-**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260)  
-**知乎** | [房子下面一头猪](https://www.zhihu.com/people/mang-guo-c-60-10)  
+  
+![公众号](/Platform_materials/公众号二维码_无白边.jpg)     
+
