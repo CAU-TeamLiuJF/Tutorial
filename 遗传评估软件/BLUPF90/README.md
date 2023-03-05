@@ -1,7 +1,3 @@
-![公众号](/Platform_materials/公众号二维码.jpg)    
-  微信公众号：房子下面一头猪    
-
-<br>   
 
 本期内容简介  
 
@@ -59,47 +55,20 @@
   
 ABLUP模型是一种基于**系谱**的混合线性模型，用**A矩阵**来计算育种值  
   
-$$\left[\begin{array}{cc}  
-\mathbf{X}^{\prime} \mathbf{X} & \mathbf{X}^{\prime} \mathbf{Z} \\  
-\mathbf{Z}^{\prime} \mathbf{X} & \mathbf{Z}^{\prime} \mathbf{Z}+\mathbf{{\color{Red} A} }^{-1} \boldsymbol{\alpha}  
-\end{array}\right]\left[\begin{array}{l}  
-\mathbf{b} \\  
-\mathbf{u}  
-\end{array}\right]=\left[\begin{array}{l}  
-\mathbf{X}^{\prime} \mathbf{y} \\  
-\mathbf{Z}^{\prime} \mathbf{y}  
-\end{array}\right]$$  
+![A阵](/遗传评估软件/BLUPF90/image/A阵.png)  
   
 ### 1.1.2 GBLUP模型  
   
 GBLUP模型是一种基于**分子标记**的混合线性模型，用**G矩阵**来计算育种值  
   
-$$\left[\begin{array}{cc}  
-\mathbf{X}^{\prime} \mathbf{X} & \mathbf{X}^{\prime} \mathbf{Z} \\  
-\mathbf{Z}^{\prime} \mathbf{X} & \mathbf{Z}^{\prime} \mathbf{Z}+\mathbf{{\color{Red} G} }^{-1} \boldsymbol{\alpha}  
-\end{array}\right]\left[\begin{array}{l}  
-\mathbf{b} \\  
-\mathbf{u}  
-\end{array}\right]=\left[\begin{array}{l}  
-\mathbf{X}^{\prime} \mathbf{y} \\  
-\mathbf{Z}^{\prime} \mathbf{y}  
-\end{array}\right]$$  
+![G阵](/遗传评估软件/BLUPF90/image/G阵.png)    
   
 ### 1.1.3 一步法(ssGBLUP)模型  
   
 - 一步法模型与BLUP一致，但随机效应的（协）方差结构不一致  
 - 使用**混合亲缘关系矩阵H**代替加性亲缘关系矩阵A阵，同时使用**系谱和基因组**信息求解  
   
-$$\left[\begin{array}{cc}  
-\mathbf{X}^{\prime} \mathbf{X} & \mathbf{X}^{\prime} \mathbf{Z} \\  
-\mathbf{Z}^{\prime} \mathbf{X} & \mathbf{Z}^{\prime} \mathbf{Z}+\mathbf{{\color{Red} H} }^{-1} \boldsymbol{\alpha}  
-\end{array}\right]\left[\begin{array}{l}  
-\mathbf{b} \\  
-\mathbf{u}  
-\end{array}\right]=\left[\begin{array}{l}  
-\mathbf{X}^{\prime} \mathbf{y} \\  
-\mathbf{Z}^{\prime} \mathbf{y}  
-\end{array}\right]$$  
+![H阵](/遗传评估软件/BLUPF90/image/H阵.png)    
   
 ## 1.2 混合亲缘关系矩阵H  
   
@@ -114,31 +83,7 @@ $$\mathbf{A}_{22}:基因分型个体组成的A阵$$
 
 <br>  
   
-$$\begin{array}{ccc}  
-\hline \text { Animal } & \text { Sire } & \text { Dam } \\  
-\hline 1 & 0 & 0 \\  
-2 & 0 & 0 \\  
-{\color{Red} 3}  & 1 & 2 \\  
-{\color{Red} 4}  & 1 & 2 \\  
-\hline  
-\end{array}  
-\left[\begin{array}{cccc}  
-1.0 & 0.0 & 0.5 & 0.5 \\  
-\cdot & 1.0 & 0.5 & 0.5 \\  
-. & . & 1.0 & 0.5 \\  
-. & . & . & 1.0  
-\end{array}\right]\\  
-{\color{Red} \left[\begin{array}{cc}  
-1.0 & 0.52 \\  
-. & 1.0  
-\end{array}\right]}\left[\begin{array}{cccc}  
-1.004 & 0.0 & 0.507 & 0.507 \\  
-. & 1.004 & 0.507 & 0.507 \\  
-\cdot & . & {\color{Red} 1.0 } &{\color{Red}  0.52}  \\  
-. & . &{\color{Red}  . } &{\color{Red}  1.0}   
-\end{array}\right]$$
-
-$$\text{系谱  A矩阵   G矩阵  H矩阵}$$  
+![举例（注释）](/遗传评估软件/BLUPF90/image/举例（注释）.png)    
   
 # 2. 软件概况  
   
@@ -689,6 +634,11 @@ $$\begin{matrix}
 ---  
   
 团队其他公众平台：  
-**微信公众号** | 房子下面一头猪  
-**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260)  
+  
+**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260) 
+  
 **知乎** | [房子下面一头猪](https://www.zhihu.com/people/mang-guo-c-60-10)
+  
+**微信公众号** | 房子下面一头猪  
+  
+![公众号](/Platform_materials/公众号二维码_无白边.jpg)  
