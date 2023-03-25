@@ -444,6 +444,10 @@ echo $MY_READ_ONLY_VAR
 编辑：李思雨  
 校对：黄千千、卓越    
   
+<br>  
+
+:warning: **转载声明**：感谢您对文章内容的认可，转载后请在醒目位置标明来源，且禁止声明原创。  
+
 ---  
   
 团队其他公众平台：  
@@ -454,5 +458,4 @@ echo $MY_READ_ONLY_VAR
   
 **微信公众号** | 房子下面一头猪  
   
-![公众号](/Platform_materials/公众号二维码_无白边.jpg)     
-
+![公众号](/Platform_materials/公众号二维码_无白边.jpg)  
