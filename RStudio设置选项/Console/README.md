@@ -1,7 +1,3 @@
-![公众号](/Platform_materials/公众号二维码.jpg)    
-  微信公众号：房子下面一头猪    
-
-<br>
 
 本期内容简介    
   
@@ -130,9 +126,18 @@ ANSI转义代码
 编辑：李思雨  
 校对：李伟宁  
 
----
+<br>  
+
+:warning: **转载声明**：感谢您对文章内容的认可，转载后请在醒目位置标明来源，且禁止声明原创。  
+
+---  
   
 团队其他公众平台：  
-**微信公众号** | 房子下面一头猪  
-**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260)  
+  
+**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260) 
+  
 **知乎** | [房子下面一头猪](https://www.zhihu.com/people/mang-guo-c-60-10)
+  
+**微信公众号** | 房子下面一头猪  
+  
+![公众号](/Platform_materials/公众号二维码_无白边.jpg)  
