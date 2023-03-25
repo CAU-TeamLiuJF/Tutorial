@@ -43,7 +43,7 @@
   
 - **下载安装程序**：在[R官网](https://www.r-project.org/)点击左上方download下的CRAN跳转到[镜像站点](https://cran.r-project.org/mirrors.html)选择界面，选择一个离自己较近的镜像站点（如：[北京外国语大学](https://mirrors.bfsu.edu.cn/CRAN/)），根据自己的系统选择合适版本的安装程序（如：[Download R for Windows](https://mirrors.bfsu.edu.cn/CRAN/bin/windows/)），跳转页面后选择子目录下的[base](https://mirrors.bfsu.edu.cn/CRAN/bin/windows/base/)下载即可。  
   
-  ![R语言安装-R语言exe下载](/image/R语言安装-R语言exe下载.png)  
+  ![R语言安装-R语言exe下载](/R/简介及安装/image/R语言安装-R语言exe下载.png)  
   
 - **运行安装程序**：双击下载的安装程序（如：R-4.2.2-win.exe）进入安装引导  
   
@@ -181,7 +181,7 @@ RStudio是一款集成开发环境（IDE），为R语言提供了更加友好的
 
 <br>  
 
-:warning: **转载声明**：感谢您对文章内容的认可，转载后请在醒目位置标明来源，且禁止声明原创。  
+:warning: **转载声明**：感谢您对文章内容的认可，转载请联系公众号“房子下面一头猪”获得授权，转载后请在醒目位置标明来源，且禁止声明原创。  
 
 ---  
   
