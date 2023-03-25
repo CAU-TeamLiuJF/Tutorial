@@ -434,9 +434,9 @@ echo $MY_READ_ONLY_VAR
   
 文章配套教程视频及其他平台文章链接：  
   
-[Shell脚本编程——2. Shell变量]()  
+[Shell脚本编程——2. Shell变量 - bilibili](https://www.bilibili.com/video/BV11A411C73w/?spm_id_from=333.788&vd_source=c8a4c5c81209deeddaf50dd9d4e2dd37)  
   
-[Shell脚本编程——2. Shell变量]()  
+[Shell脚本编程——2. Shell变量 - 知乎](https://zhuanlan.zhihu.com/p/610052898)  
   
 <br>  
    
