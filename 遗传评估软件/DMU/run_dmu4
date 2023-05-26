@@ -1,0 +1,70 @@
+#!/bin/bash
+# Date: 2020-09-08
+# Author: liwn
+# Description: Run dmu4 in parallel
+
+[[ -d $2 ]] && cd $2
+
+## 运行目录最后三级
+path=`pwd`
+# path=`echo ${path} | awk -F '/' '{printf "in ~/%s/%s/%s\n", $(NF-2), $(NF-1), $NF }'`
+
+if [ -f "$1.DIR" ]; then
+  echo Starting DMU4 with $1.DIR as directive file in $path
+  
+  time_now=`date +"%Y-%m-%d %H:%M:%S"`
+  echo "start: ${time_now}" > $1.lst
+  
+  dmu1 < $1.DIR >> $1.lst
+  
+  if [ $? -eq 0 ]
+  then
+    echo '1' >> $1.lst
+    dmu4 >> $1.lst
+    if [ $? -eq 0 ]
+    then
+      printf "project %-27s OK \n" $1   >> ../run_ex.log
+      rm -f PEDFILE* AINV* fort.* PARIN DMU*.dir
+      rm -f GINV2
+      rm -f CODE_TABLE DMU_LOG
+      rm -f DUMMY MODINF
+      rm -f RCDATA_I RCDATA_R
+      [ -f RESIDUAL ] && mv RESIDUAL $1.RESIDUAL
+            if [ -f INBREED ]
+      then
+        if [ -s INBREED ]
+        then
+          mv INBREED $1.INBREED
+        else
+          rm INBREED
+        fi
+      fi
+      if [ -f SOL_STD ]
+      then
+        if [ -s SOL_STD ]
+        then
+          mv SOL_STD $1.SOL_STD
+        else
+          rm SOL_STD
+        fi
+      fi
+      mv SOL $1.SOL
+      rm -f *.log fort.*
+    else
+      echo 
+      echo DMUAI Not started due to errors in DMU1
+      printf "project %-27s Failed in DMU4 - Check output files \n" $1 >> ../run_ex.log
+    fi
+  else
+    echo 
+    echo DMUAI Not started due to errors in DMU1
+    printf "project %-27s Failed in DMU1 - Check output files \n" $1 >> ../run_ex.log
+  fi
+  
+  time_now=`date +"%Y-%m-%d %H:%M:%S"`
+  echo "end: ${time_now}" >> $1.lst
+  
+else
+  echo
+  echo File $1.DIR not in current directory
+fi

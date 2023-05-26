@@ -1,0 +1,78 @@
+#!/bin/bash
+# Date: 2019-08-13
+# Author: liwn
+# Description: Run dmu_ai in parallel
+
+[[ -d $2 ]] && cd $2
+
+## 运行目录最后三级
+path=`pwd`
+# path=`echo ${path} | awk -F '/' '{printf " ~/%s/%s/%s\n", $(NF-2), $(NF-1), $NF }'`
+
+if [ -f "$1.DIR" ]; then
+  echo Starting DMUAI with $1.DIR as directive file in $path
+  
+  time_now=`date +"%Y-%m-%d %H:%M:%S"`
+  echo "start: ${time_now}" > $1.lst
+  
+  dmu1 < $1.DIR >> $1.lst
+  
+  if [ -f MODINF ]; then
+    dmuai &>> $1.lst
+    if [[ $? -eq 0 || -s SOL ]]
+    then
+      printf "program %-27s OK \n" $1 >> ../run_ex.log
+    else
+      echo
+      echo "${1} dmuai failed - Check output files"
+      echo "${1} dmuai failed - Check output files" >> ../run_ex.log
+    fi
+  else
+    echo
+    echo "${1} dmu1 failed - Check output files" >> ../run_ex.log
+    echo "DMUAI Not started due to errors in DMU1"
+  fi
+  
+  [ -f SOL ] && mv SOL $1.SOL
+  [ -f PAROUT ] && mv PAROUT $1.PAROUT
+  [ -f PAROUT_STD ] && mv PAROUT_STD $1.PAROUT_STD
+  [ -f LLIK ] && mv LLIK $1.LLIK
+  [ -f RESIDUAL ] && mv RESIDUAL $1.RESIDUAL
+  
+  [ -f CODE_TABLE ] && rm CODE_TABLE
+  [ -f DMU1.dir ] && rm DMU1.dir
+  [ -f DMUAI.dir ] && rm DMUAI.dir
+  [ -f DMU_LOG ] && rm DMU_LOG
+  [ -f DUMMY ] && rm DUMMY
+  [ -f FSPAKWK ] && rm FSPAKWK
+  [ -f Latest_parm ] && rm Latest_parm
+  [ -f LEVAL ] && rm LEVAL
+  [ -f MODINF ] && rm MODINF
+  [ -f PARIN ] && rm PARIN
+  [ -f RCDATA_I ] && rm RCDATA_I
+  [ -f RCDATA_R ] && rm RCDATA_R
+  [ -f PARIN ] && rm PARIN
+  
+  [ -f AINV* ] && rm AINV*
+  [ -f GINV* ] && rm GINV*
+  [ -f COR* ] && rm COR*
+  [ -f DOM* ] && rm DOM*
+  [ -f IBD* ] && rm IBD*
+  [ -f PEDFILE* ] && rm PEDFILE*
+  rm -f fort.* 1
+    
+  if [ -f INBREED ]; then
+    nchar=`cat INBREED | wc -c `
+    if [ $nchar == 0 ]; then
+      rm INBREED
+    else
+      mv INBREED $1.INBREED
+    fi
+  fi
+  
+  time_now=`date +"%Y-%m-%d %H:%M:%S"`
+  echo "end: ${time_now}" >> $1.lst
+else
+  echo
+  echo File $1.DIR not in current directory
+fi
