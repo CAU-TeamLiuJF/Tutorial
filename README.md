@@ -15,3 +15,6 @@
 3. [遗传评估软件](/遗传评估软件)
    1. [DMU](/遗传评估软件/DMU)
    2. [BLUPF90](/遗传评估软件/BLUPF90)
+4. [基因组数据模拟软件](/基因组数据模拟软件)
+   1. [QMSim-Windows版本](/基因组数据模拟软件/QMSim_Win.zip)
+   2. [QMSim-Linux版本](/基因组数据模拟软件/QMSim2_Linux.zip)
