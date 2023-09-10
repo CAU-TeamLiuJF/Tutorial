@@ -157,4 +157,34 @@
 
 - Source在左，Environment在中间，右上角为Console，右下角为Output
 
-![PaneLayout4](/RStudio设置选项/PaneLayout/image/PaneLayout4.png)
+![PaneLayout4](/RStudio设置选项/PaneLayout/image/PaneLayout4.png)  
+
+<br>  
+
+后续内容预告：  
+
+6. Packages
+7. R Markdown
+8. Python
+9. Sweave
+10. Spelling
+11. Git/SVN
+12. Publishing
+13. Terminal
+14. Accessibility
+
+<br>  
+
+:warning: **转载声明**：感谢您对文章内容的认可，转载请联系微信公众号“房子下面一头猪”获得授权，转载后请在醒目位置标明来源，且禁止声明原创。    
+
+---  
+  
+团队其他公众平台：  
+  
+**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260) 
+  
+**知乎** | [房子下面一头猪](https://www.zhihu.com/people/mang-guo-c-60-10)
+  
+**微信公众号** | 房子下面一头猪  
+  
+![公众号](/Platform_materials/公众号二维码_无白边.jpg)  
