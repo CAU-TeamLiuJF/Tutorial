@@ -98,7 +98,7 @@
   
 ![FileZilla安装组件](/超算平台使用/文件交互/image/FileZilla安装组件.png )
   
-- **选择安装路径**：选择希望软件安转的**位置**，若习惯于把软件安装在默认文件夹**Program Files**中，则可以直接点击**Next**。
+- **选择安装路径**：选择希望软件安装的**位置**，若习惯于把软件安装在默认文件夹**Program Files**中，则可以直接点击**Next**。
   
 ![FileZilla安装路径](/超算平台使用/文件交互/image/FileZilla安装路径.png )
   
