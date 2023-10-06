@@ -16,7 +16,7 @@
 
 ### 1.2.1.1 安装
 
-- **下载安装包**：通过链接[https://www.xshell.com/zh/free-for-home-school/](https://www.xshell.com/zh/free-for-home-school/)跳转到xshell官网，然后下拉页面选择**XSHELL**进行下载。
+- **下载安装包**：复制链接 https://www.xshell.com/zh/ 到浏览器访问，跳转到xshell官网，然后下拉页面选择**XSHELL**进行下载。
 
 ![Xshell免费版页面](/超算平台使用/命令交互/image/Xshell免费版页面.png)
 
