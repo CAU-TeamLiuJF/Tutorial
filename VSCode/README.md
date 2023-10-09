@@ -1,3 +1,19 @@
+- [1. VS Code](#1-vs-code )
+  - [1.1 简介](#11-简介 )
+  - [1.2 优势及不足](#12-优势及不足 )
+    - [1.2.1 优势](#121-优势 )
+    - [1.2.2 不足](#122-不足 )
+  - [1.3 安装](#13-安装 )
+- [2. 连接到远程计算机](#2-连接到远程计算机 )
+  - [2.1 VS Code Server](#21-vs-code-server )
+  - [2.2 VS Code Server安装](#22-vs-code-server安装 )
+    - [2.2.1 在线安装](#221-在线安装 )
+    - [2.2.2 离线安装](#222-离线安装 )
+      - [2.2.2.1 从其他远程主机复制](#2221-从其他远程主机复制 )
+      - [2.2.2.2 下载VS Code Server源文件](#2222-下载vs-code-server源文件 )
+
+<br>  
+
 # 1. VS Code
 
 ## 1.1 简介
@@ -169,9 +185,25 @@ tar -xzvf abd2f3.tar.gz
 - **远程连接**：按照 **2.3.1**的步骤连接到远程计算机。
 - **配置**：VS Code对远程的Server进行**进一步配置**。
 
-![手动下载](/VSCode/image/手动下载.png)
-
 #### 2.2.2.2 下载VS Code Server源文件
 
 - **下载源文件**：根据上面查询到的目前VS Code的版本，将链接：https://update.code.visualstudio.com/commit:**commit_id**/server-linux-x64/stable中的**commit_id**替换为当前版本的commit id（如：https://update.code.visualstudio.com/commit:abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/server-linux-x64/stable），然后粘贴到**浏览器**中下载该文件。
-- 按照**2.2.2.1**中的步骤将文件**复制**到需要安装**VS Code Server**的远程计算机上，**解压**后用**VS Code**连接到该远程计算机即可。
+- **远程连接**：按照**2.2.2.1**中的步骤将文件**复制**到需要远程计算机，**解压**后用**VS Code**连接到该远程计算机即可。
+- **配置**：VS Code对远程的Server进行**进一步配置**。
+
+<br> 
+<br> 
+
+:warning: **转载声明**：感谢您对文章内容的认可，转载请联系微信公众号“房子下面一头猪”获得授权，转载后请在醒目位置标明来源，且禁止声明原创。    
+
+---  
+  
+团队其他公众平台：  
+  
+**Bilibili** | [房子下面一头猪](https://space.bilibili.com/1521325260) 
+  
+**知乎** | [房子下面一头猪](https://www.zhihu.com/people/mang-guo-c-60-10)
+  
+**微信公众号** | 房子下面一头猪  
+  
+![公众号](/Platform_materials/公众号二维码_无白边.jpg)  
